@@ -4,7 +4,9 @@
 
 ### 更新进度说明
 #### 2020/11/28
-- 华为云-“华为云杯”2020人工智能创新应用大赛--图像分割-baseline(两个75+的模型训练和线上部署代码)
+- [华为云-“华为云杯”2020人工智能创新应用大赛--图像分割](https://github.com/DLLXW/data-science-competition/tree/main/%E5%8D%8E%E4%B8%BA/Huawei-cloud2020%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E5%A4%A7%E8%B5%9B--%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2)-baseline(两个75+的模型训练和线上部署代码)
+#### 2020/11/15
+- [CCF2020企业非法集资预测8395baseline(Top10%)](https://github.com/DLLXW/data-science-competition/tree/main/datafountain)
 #### 2020/10/15:
 
 - 天池-太阳黑子分类(赛道一:top10,赛道二:top4方案)
