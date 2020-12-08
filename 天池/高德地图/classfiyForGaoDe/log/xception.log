@@ -1,0 +1,760 @@
+[2020-09-16 22:34:39,789][train_xception.py][INFO] Using: xception
+[2020-09-16 22:34:39,789][train_xception.py][INFO] InputSize: 800
+[2020-09-16 22:34:39,789][train_xception.py][INFO] optimizer: sgd
+[2020-09-16 22:34:39,789][train_xception.py][INFO] lr_init: 0.0005
+[2020-09-16 22:34:39,789][train_xception.py][INFO] criterion: focal_loss
+[2020-09-16 22:34:39,789][train_xception.py][INFO] Using the GPU: [0, 1]
+[2020-09-16 22:34:42,613][train_xception.py][INFO] total_iters:644
+[2020-09-16 22:34:42,614][train_xception.py][INFO] start training...
+[2020-09-16 22:34:42,614][train_xception.py][INFO] learning rate:0.0005
+[2020-09-16 22:34:42,614][train_xception.py][INFO] Epoch 1/50
+[2020-09-16 22:34:42,614][train_xception.py][INFO] ----------
+[2020-09-16 22:34:42,614][train_xception.py][INFO] Learning Rate is 0.00049
+[2020-09-16 22:34:47,344][train_xception.py][INFO]  Epoch:1(1/644) loss:0.991 lr:0.0004890 epoch_Time:50.0min:
+[2020-09-16 22:35:27,200][train_xception.py][INFO]  Epoch:1(101/644) loss:0.126 lr:0.0004890 epoch_Time:4.0min:
+[2020-09-16 22:36:18,596][train_xception.py][INFO]  Epoch:1(201/644) loss:0.454 lr:0.0004890 epoch_Time:4.0min:
+[2020-09-16 22:36:55,536][train_xception.py][INFO]  Epoch:1(301/644) loss:0.159 lr:0.0004890 epoch_Time:2.0min:
+[2020-09-16 22:37:33,021][train_xception.py][INFO]  Epoch:1(401/644) loss:0.536 lr:0.0004890 epoch_Time:2.0min:
+[2020-09-16 22:38:11,481][train_xception.py][INFO]  Epoch:1(501/644) loss:0.313 lr:0.0004890 epoch_Time:1.0min:
+[2020-09-16 22:38:50,973][train_xception.py][INFO]  Epoch:1(601/644) loss:0.165 lr:0.0004890 epoch_Time:0.0min:
+[2020-09-16 22:39:07,388][train_xception.py][INFO]  Epoch:1(644/644) loss:0.038 lr:0.0004890 epoch_Time:0.0min:
+[2020-09-16 22:39:29,114][train_xception.py][INFO] 各类单独F1:{'畅通': 0.6959706959706959, '缓行': 0.0, '拥堵': 0.47058823529411764, '封闭': 0.861003861003861}  各类F加权:0.5551750845868493
+[2020-09-16 22:39:29,115][train_xception.py][INFO] val_size: 215  valLoss: 0.4405 valAcc: 0.7692
+[2020-09-16 22:39:29,119][train_xception.py][INFO] Epoch:[1/50] train_acc=0.587 
+[2020-09-16 22:39:29,416][train_xception.py][INFO] learning rate:0.0004889663842714643
+[2020-09-16 22:39:29,416][train_xception.py][INFO] Epoch 2/50
+[2020-09-16 22:39:29,417][train_xception.py][INFO] ----------
+[2020-09-16 22:39:29,417][train_xception.py][INFO] Learning Rate is 0.00048
+[2020-09-16 22:39:31,956][train_xception.py][INFO]  Epoch:2(1/644) loss:0.066 lr:0.0004782 epoch_Time:27.0min:
+[2020-09-16 22:40:09,232][train_xception.py][INFO]  Epoch:2(101/644) loss:0.042 lr:0.0004782 epoch_Time:4.0min:
+[2020-09-16 22:40:49,719][train_xception.py][INFO]  Epoch:2(201/644) loss:0.020 lr:0.0004782 epoch_Time:3.0min:
+[2020-09-16 22:41:28,728][train_xception.py][INFO]  Epoch:2(301/644) loss:0.061 lr:0.0004782 epoch_Time:3.0min:
+[2020-09-16 22:42:07,337][train_xception.py][INFO]  Epoch:2(401/644) loss:0.001 lr:0.0004782 epoch_Time:2.0min:
+[2020-09-16 22:42:49,179][train_xception.py][INFO]  Epoch:2(501/644) loss:0.020 lr:0.0004782 epoch_Time:1.0min:
+[2020-09-16 22:43:29,165][train_xception.py][INFO]  Epoch:2(601/644) loss:0.002 lr:0.0004782 epoch_Time:1.0min:
+[2020-09-16 22:43:45,692][train_xception.py][INFO]  Epoch:2(644/644) loss:0.007 lr:0.0004782 epoch_Time:0.0min:
+[2020-09-16 22:44:04,543][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8475609756097561, '缓行': 0.0, '拥堵': 0.5531914893617021, '封闭': 0.9489361702127661}  各类F加权:0.6302880124545926
+[2020-09-16 22:44:04,544][train_xception.py][INFO] val_size: 215  valLoss: 0.2162 valAcc: 0.8741
+[2020-09-16 22:44:04,547][train_xception.py][INFO] Epoch:[2/50] train_acc=0.828 
+[2020-09-16 22:44:04,771][train_xception.py][INFO] learning rate:0.0004781762498950185
+[2020-09-16 22:44:04,771][train_xception.py][INFO] Epoch 3/50
+[2020-09-16 22:44:04,771][train_xception.py][INFO] ----------
+[2020-09-16 22:44:04,771][train_xception.py][INFO] Learning Rate is 0.00047
+[2020-09-16 22:44:07,022][train_xception.py][INFO]  Epoch:3(1/644) loss:0.162 lr:0.0004676 epoch_Time:22.0min:
+[2020-09-16 22:44:49,742][train_xception.py][INFO]  Epoch:3(101/644) loss:0.013 lr:0.0004676 epoch_Time:4.0min:
+[2020-09-16 22:45:28,444][train_xception.py][INFO]  Epoch:3(201/644) loss:0.264 lr:0.0004676 epoch_Time:3.0min:
+[2020-09-16 22:46:08,404][train_xception.py][INFO]  Epoch:3(301/644) loss:0.036 lr:0.0004676 epoch_Time:2.0min:
+[2020-09-16 22:46:47,729][train_xception.py][INFO]  Epoch:3(401/644) loss:0.064 lr:0.0004676 epoch_Time:2.0min:
+[2020-09-16 22:47:27,748][train_xception.py][INFO]  Epoch:3(501/644) loss:0.002 lr:0.0004676 epoch_Time:1.0min:
+[2020-09-16 22:48:07,256][train_xception.py][INFO]  Epoch:3(601/644) loss:0.089 lr:0.0004676 epoch_Time:0.0min:
+[2020-09-16 22:48:24,293][train_xception.py][INFO]  Epoch:3(644/644) loss:0.000 lr:0.0004676 epoch_Time:0.0min:
+[2020-09-16 22:48:43,027][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8987341772151898, '缓行': 0.0, '拥堵': 0.6352941176470588, '封闭': 0.9819819819819819}  各类F加权:0.6732544458084294
+[2020-09-16 22:48:43,028][train_xception.py][INFO] val_size: 215  valLoss: 0.1604 valAcc: 0.9021
+[2020-09-16 22:48:43,032][train_xception.py][INFO] Epoch:[3/50] train_acc=0.868 
+[2020-09-16 22:48:43,296][train_xception.py][INFO] learning rate:0.0004676242239113107
+[2020-09-16 22:48:43,296][train_xception.py][INFO] Epoch 4/50
+[2020-09-16 22:48:43,296][train_xception.py][INFO] ----------
+[2020-09-16 22:48:43,297][train_xception.py][INFO] Learning Rate is 0.00046
+[2020-09-16 22:48:45,731][train_xception.py][INFO]  Epoch:4(1/644) loss:0.003 lr:0.0004573 epoch_Time:24.0min:
+[2020-09-16 22:49:25,828][train_xception.py][INFO]  Epoch:4(101/644) loss:0.003 lr:0.0004573 epoch_Time:4.0min:
+[2020-09-16 22:50:06,108][train_xception.py][INFO]  Epoch:4(201/644) loss:0.032 lr:0.0004573 epoch_Time:3.0min:
+[2020-09-16 22:50:46,871][train_xception.py][INFO]  Epoch:4(301/644) loss:0.000 lr:0.0004573 epoch_Time:2.0min:
+[2020-09-16 22:51:26,680][train_xception.py][INFO]  Epoch:4(401/644) loss:0.198 lr:0.0004573 epoch_Time:2.0min:
+[2020-09-16 22:52:07,621][train_xception.py][INFO]  Epoch:4(501/644) loss:0.055 lr:0.0004573 epoch_Time:1.0min:
+[2020-09-16 22:52:48,161][train_xception.py][INFO]  Epoch:4(601/644) loss:0.264 lr:0.0004573 epoch_Time:0.0min:
+[2020-09-16 22:53:05,588][train_xception.py][INFO]  Epoch:4(644/644) loss:0.000 lr:0.0004573 epoch_Time:0.0min:
+[2020-09-16 22:53:29,119][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8959537572254336, '缓行': 0.0, '拥堵': 0.6530612244897959, '封闭': 0.9866071428571429}  各类F加权:0.6801566002123394
+[2020-09-16 22:53:29,119][train_xception.py][INFO] val_size: 215  valLoss: 0.1225 valAcc: 0.9138
+[2020-09-16 22:53:29,123][train_xception.py][INFO] Epoch:[4/50] train_acc=0.898 
+[2020-09-16 22:53:29,341][train_xception.py][INFO] learning rate:0.00045730505192732634
+[2020-09-16 22:53:29,341][train_xception.py][INFO] Epoch 5/50
+[2020-09-16 22:53:29,342][train_xception.py][INFO] ----------
+[2020-09-16 22:53:29,342][train_xception.py][INFO] Learning Rate is 0.00045
+[2020-09-16 22:53:31,196][train_xception.py][INFO]  Epoch:5(1/644) loss:0.135 lr:0.0004472 epoch_Time:18.0min:
+[2020-09-16 22:54:09,843][train_xception.py][INFO]  Epoch:5(101/644) loss:0.077 lr:0.0004472 epoch_Time:4.0min:
+[2020-09-16 22:54:50,335][train_xception.py][INFO]  Epoch:5(201/644) loss:0.019 lr:0.0004472 epoch_Time:3.0min:
+[2020-09-16 22:55:30,290][train_xception.py][INFO]  Epoch:5(301/644) loss:0.006 lr:0.0004472 epoch_Time:2.0min:
+[2020-09-16 22:56:12,063][train_xception.py][INFO]  Epoch:5(401/644) loss:0.002 lr:0.0004472 epoch_Time:2.0min:
+[2020-09-16 22:56:51,903][train_xception.py][INFO]  Epoch:5(501/644) loss:0.006 lr:0.0004472 epoch_Time:1.0min:
+[2020-09-16 22:57:32,634][train_xception.py][INFO]  Epoch:5(601/644) loss:0.001 lr:0.0004472 epoch_Time:0.0min:
+[2020-09-16 22:57:50,099][train_xception.py][INFO]  Epoch:5(644/644) loss:0.000 lr:0.0004472 epoch_Time:0.0min:
+[2020-09-16 22:58:17,518][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9164086687306502, '缓行': 0.2, '拥堵': 0.676923076923077, '封闭': 0.9866666666666667}  各类F加权:0.7293844566166549
+[2020-09-16 22:58:17,519][train_xception.py][INFO] val_size: 215  valLoss: 0.1063 valAcc: 0.9184
+[2020-09-16 22:58:17,523][train_xception.py][INFO] Epoch:[5/50] train_acc=0.917 
+[2020-09-16 22:58:17,783][train_xception.py][INFO] learning rate:0.00044721359549995795
+[2020-09-16 22:58:17,783][train_xception.py][INFO] Epoch 6/50
+[2020-09-16 22:58:17,783][train_xception.py][INFO] ----------
+[2020-09-16 22:58:17,783][train_xception.py][INFO] Learning Rate is 0.00044
+[2020-09-16 22:58:20,216][train_xception.py][INFO]  Epoch:6(1/644) loss:0.109 lr:0.0004373 epoch_Time:24.0min:
+[2020-09-16 22:58:58,355][train_xception.py][INFO]  Epoch:6(101/644) loss:0.049 lr:0.0004373 epoch_Time:4.0min:
+[2020-09-16 22:59:37,969][train_xception.py][INFO]  Epoch:6(201/644) loss:0.038 lr:0.0004373 epoch_Time:3.0min:
+[2020-09-16 23:00:18,371][train_xception.py][INFO]  Epoch:6(301/644) loss:0.000 lr:0.0004373 epoch_Time:2.0min:
+[2020-09-16 23:00:58,739][train_xception.py][INFO]  Epoch:6(401/644) loss:0.026 lr:0.0004373 epoch_Time:2.0min:
+[2020-09-16 23:01:39,322][train_xception.py][INFO]  Epoch:6(501/644) loss:0.011 lr:0.0004373 epoch_Time:1.0min:
+[2020-09-16 23:02:20,924][train_xception.py][INFO]  Epoch:6(601/644) loss:0.000 lr:0.0004373 epoch_Time:0.0min:
+[2020-09-16 23:02:37,970][train_xception.py][INFO]  Epoch:6(644/644) loss:0.002 lr:0.0004373 epoch_Time:0.0min:
+[2020-09-16 23:02:56,509][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9153605015673982, '缓行': 0.0, '拥堵': 0.6835443037974684, '封闭': 0.9888143176733781}  各类F加权:0.6921250683653316
+[2020-09-16 23:02:56,509][train_xception.py][INFO] val_size: 215  valLoss: 0.1275 valAcc: 0.9184
+[2020-09-16 23:02:56,513][train_xception.py][INFO] Epoch:[6/50] train_acc=0.924 
+[2020-09-16 23:02:56,802][train_xception.py][INFO] learning rate:0.00043734482957731124
+[2020-09-16 23:02:56,803][train_xception.py][INFO] Epoch 7/50
+[2020-09-16 23:02:56,803][train_xception.py][INFO] ----------
+[2020-09-16 23:02:56,803][train_xception.py][INFO] Learning Rate is 0.00043
+[2020-09-16 23:02:59,267][train_xception.py][INFO]  Epoch:7(1/644) loss:0.001 lr:0.0004277 epoch_Time:26.0min:
+[2020-09-16 23:03:39,025][train_xception.py][INFO]  Epoch:7(101/644) loss:0.000 lr:0.0004277 epoch_Time:4.0min:
+[2020-09-16 23:04:18,945][train_xception.py][INFO]  Epoch:7(201/644) loss:0.009 lr:0.0004277 epoch_Time:3.0min:
+[2020-09-16 23:05:00,895][train_xception.py][INFO]  Epoch:7(301/644) loss:0.050 lr:0.0004277 epoch_Time:2.0min:
+[2020-09-16 23:05:40,258][train_xception.py][INFO]  Epoch:7(401/644) loss:0.001 lr:0.0004277 epoch_Time:2.0min:
+[2020-09-16 23:06:20,635][train_xception.py][INFO]  Epoch:7(501/644) loss:0.004 lr:0.0004277 epoch_Time:1.0min:
+[2020-09-16 23:07:01,600][train_xception.py][INFO]  Epoch:7(601/644) loss:0.000 lr:0.0004277 epoch_Time:0.0min:
+[2020-09-16 23:07:18,170][train_xception.py][INFO]  Epoch:7(644/644) loss:0.000 lr:0.0004277 epoch_Time:0.0min:
+[2020-09-16 23:07:38,187][train_xception.py][INFO] 各类单独F1:{'畅通': 0.923076923076923, '缓行': 0.0, '拥堵': 0.7027027027027026, '封闭': 0.9865470852017937}  各类F加权:0.6977373371992206
+[2020-09-16 23:07:38,187][train_xception.py][INFO] val_size: 215  valLoss: 0.1342 valAcc: 0.9231
+[2020-09-16 23:07:38,192][train_xception.py][INFO] Epoch:[7/50] train_acc=0.932 
+[2020-09-16 23:07:38,192][train_xception.py][INFO] learning rate:0.00042769383999647525
+[2020-09-16 23:07:38,193][train_xception.py][INFO] Epoch 8/50
+[2020-09-16 23:07:38,193][train_xception.py][INFO] ----------
+[2020-09-16 23:07:38,193][train_xception.py][INFO] Learning Rate is 0.00042
+[2020-09-16 23:07:40,920][train_xception.py][INFO]  Epoch:8(1/644) loss:0.001 lr:0.0004183 epoch_Time:27.0min:
+[2020-09-16 23:08:25,952][train_xception.py][INFO]  Epoch:8(101/644) loss:0.000 lr:0.0004183 epoch_Time:5.0min:
+[2020-09-16 23:09:04,643][train_xception.py][INFO]  Epoch:8(201/644) loss:0.000 lr:0.0004183 epoch_Time:3.0min:
+[2020-09-16 23:09:46,652][train_xception.py][INFO]  Epoch:8(301/644) loss:0.000 lr:0.0004183 epoch_Time:2.0min:
+[2020-09-16 23:10:25,514][train_xception.py][INFO]  Epoch:8(401/644) loss:0.000 lr:0.0004183 epoch_Time:2.0min:
+[2020-09-16 23:11:07,195][train_xception.py][INFO]  Epoch:8(501/644) loss:0.000 lr:0.0004183 epoch_Time:1.0min:
+[2020-09-16 23:11:46,697][train_xception.py][INFO]  Epoch:8(601/644) loss:0.000 lr:0.0004183 epoch_Time:0.0min:
+[2020-09-16 23:12:03,483][train_xception.py][INFO]  Epoch:8(644/644) loss:0.000 lr:0.0004183 epoch_Time:0.0min:
+[2020-09-16 23:12:24,374][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9244712990936558, '缓行': 0.0, '拥堵': 0.7462686567164178, '封闭': 0.9888143176733781}  各类F加权:0.7118534539936423
+[2020-09-16 23:12:24,375][train_xception.py][INFO] val_size: 215  valLoss: 0.1294 valAcc: 0.9301
+[2020-09-16 23:12:24,379][train_xception.py][INFO] Epoch:[8/50] train_acc=0.932 
+[2020-09-16 23:12:24,665][train_xception.py][INFO] learning rate:0.0004182558210365093
+[2020-09-16 23:12:24,665][train_xception.py][INFO] Epoch 9/50
+[2020-09-16 23:12:24,666][train_xception.py][INFO] ----------
+[2020-09-16 23:12:24,666][train_xception.py][INFO] Learning Rate is 0.00041
+[2020-09-16 23:12:27,080][train_xception.py][INFO]  Epoch:9(1/644) loss:0.001 lr:0.0004090 epoch_Time:24.0min:
+[2020-09-16 23:13:05,642][train_xception.py][INFO]  Epoch:9(101/644) loss:0.009 lr:0.0004090 epoch_Time:4.0min:
+[2020-09-16 23:13:48,088][train_xception.py][INFO]  Epoch:9(201/644) loss:0.065 lr:0.0004090 epoch_Time:3.0min:
+[2020-09-16 23:14:26,816][train_xception.py][INFO]  Epoch:9(301/644) loss:0.004 lr:0.0004090 epoch_Time:2.0min:
+[2020-09-16 23:15:08,388][train_xception.py][INFO]  Epoch:9(401/644) loss:0.212 lr:0.0004090 epoch_Time:2.0min:
+[2020-09-16 23:15:47,922][train_xception.py][INFO]  Epoch:9(501/644) loss:0.001 lr:0.0004090 epoch_Time:1.0min:
+[2020-09-16 23:16:27,813][train_xception.py][INFO]  Epoch:9(601/644) loss:0.008 lr:0.0004090 epoch_Time:0.0min:
+[2020-09-16 23:16:44,590][train_xception.py][INFO]  Epoch:9(644/644) loss:0.000 lr:0.0004090 epoch_Time:0.0min:
+[2020-09-16 23:17:03,304][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9153605015673982, '缓行': 0.0, '拥堵': 0.7088607594936708, '封闭': 0.9888143176733781}  各类F加权:0.6997200050741923
+[2020-09-16 23:17:03,305][train_xception.py][INFO] val_size: 215  valLoss: 0.1553 valAcc: 0.9207
+[2020-09-16 23:17:03,309][train_xception.py][INFO] Epoch:[9/50] train_acc=0.942 
+[2020-09-16 23:17:03,310][train_xception.py][INFO] learning rate:0.00040902607302542923
+[2020-09-16 23:17:03,310][train_xception.py][INFO] Epoch 10/50
+[2020-09-16 23:17:03,310][train_xception.py][INFO] ----------
+[2020-09-16 23:17:03,310][train_xception.py][INFO] Learning Rate is 0.00040
+[2020-09-16 23:17:05,742][train_xception.py][INFO]  Epoch:10(1/644) loss:0.004 lr:0.0004000 epoch_Time:24.0min:
+[2020-09-16 23:17:48,632][train_xception.py][INFO]  Epoch:10(101/644) loss:0.000 lr:0.0004000 epoch_Time:4.0min:
+[2020-09-16 23:18:28,746][train_xception.py][INFO]  Epoch:10(201/644) loss:0.016 lr:0.0004000 epoch_Time:3.0min:
+[2020-09-16 23:19:08,617][train_xception.py][INFO]  Epoch:10(301/644) loss:0.024 lr:0.0004000 epoch_Time:2.0min:
+[2020-09-16 23:19:47,666][train_xception.py][INFO]  Epoch:10(401/644) loss:0.018 lr:0.0004000 epoch_Time:2.0min:
+[2020-09-16 23:20:29,496][train_xception.py][INFO]  Epoch:10(501/644) loss:0.000 lr:0.0004000 epoch_Time:1.0min:
+[2020-09-16 23:21:08,798][train_xception.py][INFO]  Epoch:10(601/644) loss:0.037 lr:0.0004000 epoch_Time:0.0min:
+[2020-09-16 23:21:25,547][train_xception.py][INFO]  Epoch:10(644/644) loss:0.000 lr:0.0004000 epoch_Time:0.0min:
+[2020-09-16 23:21:47,832][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9044585987261146, '缓行': 0.0, '拥堵': 0.6341463414634146, '封闭': 0.9866071428571429}  各类F加权:0.6753326194544931
+[2020-09-16 23:21:47,832][train_xception.py][INFO] val_size: 215  valLoss: 0.1845 valAcc: 0.9068
+[2020-09-16 23:21:47,837][train_xception.py][INFO] Epoch:[10/50] train_acc=0.951 
+[2020-09-16 23:21:48,157][train_xception.py][INFO] learning rate:0.0004
+[2020-09-16 23:21:48,157][train_xception.py][INFO] Epoch 11/50
+[2020-09-16 23:21:48,157][train_xception.py][INFO] ----------
+[2020-09-16 23:21:48,158][train_xception.py][INFO] Learning Rate is 0.00039
+[2020-09-16 23:21:50,306][train_xception.py][INFO]  Epoch:11(1/644) loss:0.000 lr:0.0003912 epoch_Time:21.0min:
+[2020-09-16 23:22:29,369][train_xception.py][INFO]  Epoch:11(101/644) loss:0.000 lr:0.0003912 epoch_Time:4.0min:
+[2020-09-16 23:23:09,446][train_xception.py][INFO]  Epoch:11(201/644) loss:0.216 lr:0.0003912 epoch_Time:3.0min:
+[2020-09-16 23:23:49,204][train_xception.py][INFO]  Epoch:11(301/644) loss:0.000 lr:0.0003912 epoch_Time:2.0min:
+[2020-09-16 23:24:28,903][train_xception.py][INFO]  Epoch:11(401/644) loss:0.025 lr:0.0003912 epoch_Time:2.0min:
+[2020-09-16 23:25:08,817][train_xception.py][INFO]  Epoch:11(501/644) loss:0.000 lr:0.0003912 epoch_Time:1.0min:
+[2020-09-16 23:25:48,955][train_xception.py][INFO]  Epoch:11(601/644) loss:0.015 lr:0.0003912 epoch_Time:0.0min:
+[2020-09-16 23:26:05,816][train_xception.py][INFO]  Epoch:11(644/644) loss:0.000 lr:0.0003912 epoch_Time:0.0min:
+[2020-09-16 23:26:27,207][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8952380952380952, '缓行': 0.3225806451612903, '拥堵': 0.696969696969697, '封闭': 0.9865470852017937}  各类F加权:0.7577496817276942
+[2020-09-16 23:26:27,207][train_xception.py][INFO] val_size: 215  valLoss: 0.1555 valAcc: 0.9068
+[2020-09-16 23:26:27,211][train_xception.py][INFO] Epoch:[11/50] train_acc=0.937 
+[2020-09-16 23:26:27,430][train_xception.py][INFO] learning rate:0.00039117310741717143
+[2020-09-16 23:26:27,430][train_xception.py][INFO] Epoch 12/50
+[2020-09-16 23:26:27,431][train_xception.py][INFO] ----------
+[2020-09-16 23:26:27,431][train_xception.py][INFO] Learning Rate is 0.00038
+[2020-09-16 23:26:29,463][train_xception.py][INFO]  Epoch:12(1/644) loss:0.000 lr:0.0003825 epoch_Time:21.0min:
+[2020-09-16 23:27:11,074][train_xception.py][INFO]  Epoch:12(101/644) loss:0.000 lr:0.0003825 epoch_Time:4.0min:
+[2020-09-16 23:27:50,382][train_xception.py][INFO]  Epoch:12(201/644) loss:0.000 lr:0.0003825 epoch_Time:3.0min:
+[2020-09-16 23:28:30,471][train_xception.py][INFO]  Epoch:12(301/644) loss:0.016 lr:0.0003825 epoch_Time:2.0min:
+[2020-09-16 23:29:10,217][train_xception.py][INFO]  Epoch:12(401/644) loss:0.142 lr:0.0003825 epoch_Time:2.0min:
+[2020-09-16 23:29:50,029][train_xception.py][INFO]  Epoch:12(501/644) loss:0.000 lr:0.0003825 epoch_Time:1.0min:
+[2020-09-16 23:30:30,176][train_xception.py][INFO]  Epoch:12(601/644) loss:0.009 lr:0.0003825 epoch_Time:0.0min:
+[2020-09-16 23:30:47,081][train_xception.py][INFO]  Epoch:12(644/644) loss:0.000 lr:0.0003825 epoch_Time:0.0min:
+[2020-09-16 23:31:05,768][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9146341463414636, '缓行': 0.13333333333333336, '拥堵': 0.6956521739130435, '封闭': 0.9865470852017937}  各类F加权:0.7214445675554436
+[2020-09-16 23:31:05,769][train_xception.py][INFO] val_size: 215  valLoss: 0.1681 valAcc: 0.9207
+[2020-09-16 23:31:05,773][train_xception.py][INFO] Epoch:[12/50] train_acc=0.952 
+[2020-09-16 23:31:06,132][train_xception.py][INFO] learning rate:0.0003825409999160148
+[2020-09-16 23:31:06,133][train_xception.py][INFO] Epoch 13/50
+[2020-09-16 23:31:06,133][train_xception.py][INFO] ----------
+[2020-09-16 23:31:06,133][train_xception.py][INFO] Learning Rate is 0.00037
+[2020-09-16 23:31:08,665][train_xception.py][INFO]  Epoch:13(1/644) loss:0.001 lr:0.0003741 epoch_Time:25.0min:
+[2020-09-16 23:31:52,312][train_xception.py][INFO]  Epoch:13(101/644) loss:0.018 lr:0.0003741 epoch_Time:4.0min:
+[2020-09-16 23:32:31,798][train_xception.py][INFO]  Epoch:13(201/644) loss:0.006 lr:0.0003741 epoch_Time:3.0min:
+[2020-09-16 23:33:11,940][train_xception.py][INFO]  Epoch:13(301/644) loss:0.008 lr:0.0003741 epoch_Time:2.0min:
+[2020-09-16 23:33:52,228][train_xception.py][INFO]  Epoch:13(401/644) loss:0.029 lr:0.0003741 epoch_Time:2.0min:
+[2020-09-16 23:34:32,942][train_xception.py][INFO]  Epoch:13(501/644) loss:0.000 lr:0.0003741 epoch_Time:1.0min:
+[2020-09-16 23:35:12,168][train_xception.py][INFO]  Epoch:13(601/644) loss:0.000 lr:0.0003741 epoch_Time:0.0min:
+[2020-09-16 23:35:29,855][train_xception.py][INFO]  Epoch:13(644/644) loss:0.044 lr:0.0003741 epoch_Time:0.0min:
+[2020-09-16 23:36:00,134][train_xception.py][INFO] 各类单独F1:{'畅通': 0.920245398773006, '缓行': 0.13333333333333336, '拥堵': 0.6956521739130435, '封闭': 0.9866071428571429}  各类F加权:0.7220297158607375
+[2020-09-16 23:36:00,135][train_xception.py][INFO] val_size: 215  valLoss: 0.1782 valAcc: 0.9231
+[2020-09-16 23:36:00,139][train_xception.py][INFO] Epoch:[13/50] train_acc=0.961 
+[2020-09-16 23:36:00,140][train_xception.py][INFO] learning rate:0.00037409937912904855
+[2020-09-16 23:36:00,140][train_xception.py][INFO] Epoch 14/50
+[2020-09-16 23:36:00,140][train_xception.py][INFO] ----------
+[2020-09-16 23:36:00,140][train_xception.py][INFO] Learning Rate is 0.00037
+[2020-09-16 23:36:02,597][train_xception.py][INFO]  Epoch:14(1/644) loss:0.000 lr:0.0003658 epoch_Time:24.0min:
+[2020-09-16 23:36:39,651][train_xception.py][INFO]  Epoch:14(101/644) loss:0.005 lr:0.0003658 epoch_Time:4.0min:
+[2020-09-16 23:37:18,850][train_xception.py][INFO]  Epoch:14(201/644) loss:0.000 lr:0.0003658 epoch_Time:3.0min:
+[2020-09-16 23:37:57,364][train_xception.py][INFO]  Epoch:14(301/644) loss:0.029 lr:0.0003658 epoch_Time:3.0min:
+[2020-09-16 23:38:37,256][train_xception.py][INFO]  Epoch:14(401/644) loss:0.003 lr:0.0003658 epoch_Time:2.0min:
+[2020-09-16 23:39:16,300][train_xception.py][INFO]  Epoch:14(501/644) loss:0.000 lr:0.0003658 epoch_Time:1.0min:
+[2020-09-16 23:39:55,758][train_xception.py][INFO]  Epoch:14(601/644) loss:0.001 lr:0.0003658 epoch_Time:1.0min:
+[2020-09-16 23:40:12,337][train_xception.py][INFO]  Epoch:14(644/644) loss:0.000 lr:0.0003658 epoch_Time:0.0min:
+[2020-09-16 23:40:31,998][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9090909090909092, '缓行': 0.0, '拥堵': 0.6756756756756757, '封闭': 0.9866071428571429}  各类F加权:0.6882546507546508
+[2020-09-16 23:40:31,998][train_xception.py][INFO] val_size: 215  valLoss: 0.2252 valAcc: 0.9114
+[2020-09-16 23:40:32,003][train_xception.py][INFO] Epoch:[14/50] train_acc=0.962 
+[2020-09-16 23:40:32,322][train_xception.py][INFO] learning rate:0.00036584404154186114
+[2020-09-16 23:40:32,323][train_xception.py][INFO] Epoch 15/50
+[2020-09-16 23:40:32,323][train_xception.py][INFO] ----------
+[2020-09-16 23:40:32,323][train_xception.py][INFO] Learning Rate is 0.00036
+[2020-09-16 23:40:35,130][train_xception.py][INFO]  Epoch:15(1/644) loss:0.001 lr:0.0003578 epoch_Time:28.0min:
+[2020-09-16 23:41:14,795][train_xception.py][INFO]  Epoch:15(101/644) loss:0.001 lr:0.0003578 epoch_Time:4.0min:
+[2020-09-16 23:41:55,696][train_xception.py][INFO]  Epoch:15(201/644) loss:0.005 lr:0.0003578 epoch_Time:3.0min:
+[2020-09-16 23:42:36,493][train_xception.py][INFO]  Epoch:15(301/644) loss:0.004 lr:0.0003578 epoch_Time:2.0min:
+[2020-09-16 23:43:15,307][train_xception.py][INFO]  Epoch:15(401/644) loss:0.000 lr:0.0003578 epoch_Time:2.0min:
+[2020-09-16 23:43:55,434][train_xception.py][INFO]  Epoch:15(501/644) loss:0.000 lr:0.0003578 epoch_Time:1.0min:
+[2020-09-16 23:44:35,849][train_xception.py][INFO]  Epoch:15(601/644) loss:0.000 lr:0.0003578 epoch_Time:0.0min:
+[2020-09-16 23:44:52,879][train_xception.py][INFO]  Epoch:15(644/644) loss:0.098 lr:0.0003578 epoch_Time:0.0min:
+[2020-09-16 23:45:13,417][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9044585987261146, '缓行': 0.18181818181818185, '拥堵': 0.6933333333333334, '封闭': 0.9888143176733781}  各类F加权:0.7303352233055991
+[2020-09-16 23:45:13,417][train_xception.py][INFO] val_size: 215  valLoss: 0.2511 valAcc: 0.9114
+[2020-09-16 23:45:13,422][train_xception.py][INFO] Epoch:[15/50] train_acc=0.965 
+[2020-09-16 23:45:13,422][train_xception.py][INFO] learning rate:0.0003577708763999664
+[2020-09-16 23:45:13,423][train_xception.py][INFO] Epoch 16/50
+[2020-09-16 23:45:13,423][train_xception.py][INFO] ----------
+[2020-09-16 23:45:13,423][train_xception.py][INFO] Learning Rate is 0.00035
+[2020-09-16 23:45:15,652][train_xception.py][INFO]  Epoch:16(1/644) loss:0.012 lr:0.0003499 epoch_Time:22.0min:
+[2020-09-16 23:45:54,926][train_xception.py][INFO]  Epoch:16(101/644) loss:0.001 lr:0.0003499 epoch_Time:4.0min:
+[2020-09-16 23:46:35,631][train_xception.py][INFO]  Epoch:16(201/644) loss:0.000 lr:0.0003499 epoch_Time:3.0min:
+[2020-09-16 23:47:15,738][train_xception.py][INFO]  Epoch:16(301/644) loss:0.004 lr:0.0003499 epoch_Time:2.0min:
+[2020-09-16 23:47:55,645][train_xception.py][INFO]  Epoch:16(401/644) loss:0.001 lr:0.0003499 epoch_Time:2.0min:
+[2020-09-16 23:48:35,701][train_xception.py][INFO]  Epoch:16(501/644) loss:0.000 lr:0.0003499 epoch_Time:1.0min:
+[2020-09-16 23:49:14,980][train_xception.py][INFO]  Epoch:16(601/644) loss:0.003 lr:0.0003499 epoch_Time:0.0min:
+[2020-09-16 23:49:31,703][train_xception.py][INFO]  Epoch:16(644/644) loss:0.000 lr:0.0003499 epoch_Time:0.0min:
+[2020-09-16 23:49:53,609][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9067524115755626, '缓行': 0.2608695652173913, '拥堵': 0.6753246753246752, '封闭': 0.9888143176733781}  各类F加权:0.7409722838677884
+[2020-09-16 23:49:53,610][train_xception.py][INFO] val_size: 215  valLoss: 0.2914 valAcc: 0.9114
+[2020-09-16 23:49:53,614][train_xception.py][INFO] Epoch:[16/50] train_acc=0.968 
+[2020-09-16 23:49:53,847][train_xception.py][INFO] learning rate:0.00034987586366184905
+[2020-09-16 23:49:53,848][train_xception.py][INFO] Epoch 17/50
+[2020-09-16 23:49:53,848][train_xception.py][INFO] ----------
+[2020-09-16 23:49:53,848][train_xception.py][INFO] Learning Rate is 0.00034
+[2020-09-16 23:49:56,276][train_xception.py][INFO]  Epoch:17(1/644) loss:0.000 lr:0.0003422 epoch_Time:26.0min:
+[2020-09-16 23:50:35,511][train_xception.py][INFO]  Epoch:17(101/644) loss:0.012 lr:0.0003422 epoch_Time:4.0min:
+[2020-09-16 23:51:14,743][train_xception.py][INFO]  Epoch:17(201/644) loss:0.000 lr:0.0003422 epoch_Time:3.0min:
+[2020-09-16 23:51:53,665][train_xception.py][INFO]  Epoch:17(301/644) loss:0.000 lr:0.0003422 epoch_Time:3.0min:
+[2020-09-16 23:52:33,798][train_xception.py][INFO]  Epoch:17(401/644) loss:0.000 lr:0.0003422 epoch_Time:2.0min:
+[2020-09-16 23:53:14,070][train_xception.py][INFO]  Epoch:17(501/644) loss:0.001 lr:0.0003422 epoch_Time:1.0min:
+[2020-09-16 23:53:53,391][train_xception.py][INFO]  Epoch:17(601/644) loss:0.000 lr:0.0003422 epoch_Time:1.0min:
+[2020-09-16 23:54:10,277][train_xception.py][INFO]  Epoch:17(644/644) loss:0.006 lr:0.0003422 epoch_Time:0.0min:
+[2020-09-16 23:54:29,254][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9085173501577287, '缓行': 0.1, '拥堵': 0.684931506849315, '封闭': 0.9866071428571429}  各类F加权:0.7109740442134246
+[2020-09-16 23:54:29,254][train_xception.py][INFO] val_size: 215  valLoss: 0.2561 valAcc: 0.9114
+[2020-09-16 23:54:29,259][train_xception.py][INFO] Epoch:[17/50] train_acc=0.971 
+[2020-09-16 23:54:29,259][train_xception.py][INFO] learning rate:0.0003421550719971802
+[2020-09-16 23:54:29,259][train_xception.py][INFO] Epoch 18/50
+[2020-09-16 23:54:29,260][train_xception.py][INFO] ----------
+[2020-09-16 23:54:29,260][train_xception.py][INFO] Learning Rate is 0.00033
+[2020-09-16 23:54:31,727][train_xception.py][INFO]  Epoch:18(1/644) loss:0.000 lr:0.0003346 epoch_Time:24.0min:
+[2020-09-16 23:55:11,561][train_xception.py][INFO]  Epoch:18(101/644) loss:0.000 lr:0.0003346 epoch_Time:4.0min:
+[2020-09-16 23:55:49,132][train_xception.py][INFO]  Epoch:18(201/644) loss:0.002 lr:0.0003346 epoch_Time:3.0min:
+[2020-09-16 23:56:28,033][train_xception.py][INFO]  Epoch:18(301/644) loss:0.001 lr:0.0003346 epoch_Time:3.0min:
+[2020-09-16 23:57:06,377][train_xception.py][INFO]  Epoch:18(401/644) loss:0.000 lr:0.0003346 epoch_Time:2.0min:
+[2020-09-16 23:57:44,882][train_xception.py][INFO]  Epoch:18(501/644) loss:0.001 lr:0.0003346 epoch_Time:1.0min:
+[2020-09-16 23:58:23,897][train_xception.py][INFO]  Epoch:18(601/644) loss:0.001 lr:0.0003346 epoch_Time:1.0min:
+[2020-09-16 23:58:40,422][train_xception.py][INFO]  Epoch:18(644/644) loss:0.000 lr:0.0003346 epoch_Time:0.0min:
+[2020-09-16 23:58:59,437][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9038461538461539, '缓行': 0.24999999999999994, '拥堵': 0.6933333333333334, '封闭': 0.9888143176733781}  各类F加权:0.7439103424539667
+[2020-09-16 23:58:59,437][train_xception.py][INFO] val_size: 215  valLoss: 0.3096 valAcc: 0.9114
+[2020-09-16 23:58:59,441][train_xception.py][INFO] Epoch:[18/50] train_acc=0.972 
+[2020-09-16 23:58:59,715][train_xception.py][INFO] learning rate:0.00033460465682920746
+[2020-09-16 23:58:59,715][train_xception.py][INFO] Epoch 19/50
+[2020-09-16 23:58:59,715][train_xception.py][INFO] ----------
+[2020-09-16 23:58:59,715][train_xception.py][INFO] Learning Rate is 0.00033
+[2020-09-16 23:59:01,610][train_xception.py][INFO]  Epoch:19(1/644) loss:0.000 lr:0.0003272 epoch_Time:18.0min:
+[2020-09-16 23:59:39,379][train_xception.py][INFO]  Epoch:19(101/644) loss:0.000 lr:0.0003272 epoch_Time:4.0min:
+[2020-09-17 00:00:18,131][train_xception.py][INFO]  Epoch:19(201/644) loss:0.000 lr:0.0003272 epoch_Time:3.0min:
+[2020-09-17 00:00:56,614][train_xception.py][INFO]  Epoch:19(301/644) loss:0.000 lr:0.0003272 epoch_Time:3.0min:
+[2020-09-17 00:01:35,446][train_xception.py][INFO]  Epoch:19(401/644) loss:0.000 lr:0.0003272 epoch_Time:2.0min:
+[2020-09-17 00:02:14,084][train_xception.py][INFO]  Epoch:19(501/644) loss:0.004 lr:0.0003272 epoch_Time:1.0min:
+[2020-09-17 00:02:53,037][train_xception.py][INFO]  Epoch:19(601/644) loss:0.000 lr:0.0003272 epoch_Time:1.0min:
+[2020-09-17 00:03:09,410][train_xception.py][INFO]  Epoch:19(644/644) loss:0.000 lr:0.0003272 epoch_Time:0.0min:
+[2020-09-17 00:03:26,783][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9006211180124224, '缓行': 0.08, '拥堵': 0.6875, '封闭': 0.9888143176733781}  各类F加权:0.7078378388705935
+[2020-09-17 00:03:26,784][train_xception.py][INFO] val_size: 215  valLoss: 0.2753 valAcc: 0.9068
+[2020-09-17 00:03:26,789][train_xception.py][INFO] Epoch:[19/50] train_acc=0.973 
+[2020-09-17 00:03:26,789][train_xception.py][INFO] learning rate:0.0003272208584203434
+[2020-09-17 00:03:26,789][train_xception.py][INFO] Epoch 20/50
+[2020-09-17 00:03:26,789][train_xception.py][INFO] ----------
+[2020-09-17 00:03:26,790][train_xception.py][INFO] Learning Rate is 0.00032
+[2020-09-17 00:03:29,330][train_xception.py][INFO]  Epoch:20(1/644) loss:0.002 lr:0.0003200 epoch_Time:25.0min:
+[2020-09-17 00:04:08,354][train_xception.py][INFO]  Epoch:20(101/644) loss:0.020 lr:0.0003200 epoch_Time:4.0min:
+[2020-09-17 00:04:46,568][train_xception.py][INFO]  Epoch:20(201/644) loss:0.010 lr:0.0003200 epoch_Time:3.0min:
+[2020-09-17 00:05:24,980][train_xception.py][INFO]  Epoch:20(301/644) loss:0.005 lr:0.0003200 epoch_Time:3.0min:
+[2020-09-17 00:06:03,822][train_xception.py][INFO]  Epoch:20(401/644) loss:0.000 lr:0.0003200 epoch_Time:2.0min:
+[2020-09-17 00:06:42,401][train_xception.py][INFO]  Epoch:20(501/644) loss:0.000 lr:0.0003200 epoch_Time:1.0min:
+[2020-09-17 00:07:20,913][train_xception.py][INFO]  Epoch:20(601/644) loss:0.000 lr:0.0003200 epoch_Time:1.0min:
+[2020-09-17 00:07:37,349][train_xception.py][INFO]  Epoch:20(644/644) loss:0.169 lr:0.0003200 epoch_Time:0.0min:
+[2020-09-17 00:07:56,379][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9022082018927445, '缓行': 0.1, '拥堵': 0.6756756756756757, '封闭': 0.9888143176733781}  各类F加权:0.7084492499613284
+[2020-09-17 00:07:56,380][train_xception.py][INFO] val_size: 215  valLoss: 0.3012 valAcc: 0.9091
+[2020-09-17 00:07:56,383][train_xception.py][INFO] Epoch:[20/50] train_acc=0.975 
+[2020-09-17 00:07:56,554][train_xception.py][INFO] learning rate:0.0003200000000000001
+[2020-09-17 00:07:56,554][train_xception.py][INFO] Epoch 21/50
+[2020-09-17 00:07:56,554][train_xception.py][INFO] ----------
+[2020-09-17 00:07:56,554][train_xception.py][INFO] Learning Rate is 0.00031
+[2020-09-17 00:07:58,355][train_xception.py][INFO]  Epoch:21(1/644) loss:0.001 lr:0.0003129 epoch_Time:17.0min:
+[2020-09-17 00:08:37,505][train_xception.py][INFO]  Epoch:21(101/644) loss:0.000 lr:0.0003129 epoch_Time:4.0min:
+[2020-09-17 00:09:15,788][train_xception.py][INFO]  Epoch:21(201/644) loss:0.004 lr:0.0003129 epoch_Time:3.0min:
+[2020-09-17 00:09:54,309][train_xception.py][INFO]  Epoch:21(301/644) loss:0.003 lr:0.0003129 epoch_Time:3.0min:
+[2020-09-17 00:10:32,863][train_xception.py][INFO]  Epoch:21(401/644) loss:0.012 lr:0.0003129 epoch_Time:2.0min:
+[2020-09-17 00:11:11,603][train_xception.py][INFO]  Epoch:21(501/644) loss:0.000 lr:0.0003129 epoch_Time:1.0min:
+[2020-09-17 00:11:50,765][train_xception.py][INFO]  Epoch:21(601/644) loss:0.000 lr:0.0003129 epoch_Time:1.0min:
+[2020-09-17 00:12:06,735][train_xception.py][INFO]  Epoch:21(644/644) loss:0.000 lr:0.0003129 epoch_Time:0.0min:
+[2020-09-17 00:12:24,807][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9085173501577287, '缓行': 0.14285714285714288, '拥堵': 0.7761194029850748, '封闭': 0.9865470852017937}  各类F加权:0.7468778185634414
+[2020-09-17 00:12:24,807][train_xception.py][INFO] val_size: 215  valLoss: 0.2427 valAcc: 0.9138
+[2020-09-17 00:12:24,812][train_xception.py][INFO] Epoch:[21/50] train_acc=0.965 
+[2020-09-17 00:12:24,813][train_xception.py][INFO] learning rate:0.0003129384859337371
+[2020-09-17 00:12:24,813][train_xception.py][INFO] Epoch 22/50
+[2020-09-17 00:12:24,813][train_xception.py][INFO] ----------
+[2020-09-17 00:12:24,813][train_xception.py][INFO] Learning Rate is 0.00031
+[2020-09-17 00:12:27,327][train_xception.py][INFO]  Epoch:22(1/644) loss:0.000 lr:0.0003060 epoch_Time:26.0min:
+[2020-09-17 00:13:05,763][train_xception.py][INFO]  Epoch:22(101/644) loss:0.004 lr:0.0003060 epoch_Time:4.0min:
+[2020-09-17 00:13:44,780][train_xception.py][INFO]  Epoch:22(201/644) loss:0.000 lr:0.0003060 epoch_Time:3.0min:
+[2020-09-17 00:14:23,255][train_xception.py][INFO]  Epoch:22(301/644) loss:0.000 lr:0.0003060 epoch_Time:3.0min:
+[2020-09-17 00:15:02,075][train_xception.py][INFO]  Epoch:22(401/644) loss:0.002 lr:0.0003060 epoch_Time:2.0min:
+[2020-09-17 00:15:41,313][train_xception.py][INFO]  Epoch:22(501/644) loss:0.000 lr:0.0003060 epoch_Time:1.0min:
+[2020-09-17 00:16:20,136][train_xception.py][INFO]  Epoch:22(601/644) loss:0.002 lr:0.0003060 epoch_Time:1.0min:
+[2020-09-17 00:16:36,994][train_xception.py][INFO]  Epoch:22(644/644) loss:0.000 lr:0.0003060 epoch_Time:0.0min:
+[2020-09-17 00:16:56,003][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9107692307692308, '缓行': 0.2702702702702703, '拥堵': 0.5714285714285714, '封闭': 0.9888143176733781}  各类F加权:0.7120852756288998
+[2020-09-17 00:16:56,003][train_xception.py][INFO] val_size: 215  valLoss: 0.2642 valAcc: 0.9044
+[2020-09-17 00:16:56,008][train_xception.py][INFO] Epoch:[22/50] train_acc=0.974 
+[2020-09-17 00:16:56,210][train_xception.py][INFO] learning rate:0.00030603279993281186
+[2020-09-17 00:16:56,211][train_xception.py][INFO] Epoch 23/50
+[2020-09-17 00:16:56,211][train_xception.py][INFO] ----------
+[2020-09-17 00:16:56,211][train_xception.py][INFO] Learning Rate is 0.00030
+[2020-09-17 00:16:58,620][train_xception.py][INFO]  Epoch:23(1/644) loss:0.014 lr:0.0002993 epoch_Time:24.0min:
+[2020-09-17 00:17:37,995][train_xception.py][INFO]  Epoch:23(101/644) loss:0.000 lr:0.0002993 epoch_Time:4.0min:
+[2020-09-17 00:18:16,452][train_xception.py][INFO]  Epoch:23(201/644) loss:0.010 lr:0.0002993 epoch_Time:3.0min:
+[2020-09-17 00:18:56,211][train_xception.py][INFO]  Epoch:23(301/644) loss:0.026 lr:0.0002993 epoch_Time:3.0min:
+[2020-09-17 00:19:35,443][train_xception.py][INFO]  Epoch:23(401/644) loss:0.000 lr:0.0002993 epoch_Time:2.0min:
+[2020-09-17 00:20:14,522][train_xception.py][INFO]  Epoch:23(501/644) loss:0.001 lr:0.0002993 epoch_Time:1.0min:
+[2020-09-17 00:20:53,411][train_xception.py][INFO]  Epoch:23(601/644) loss:0.000 lr:0.0002993 epoch_Time:1.0min:
+[2020-09-17 00:21:09,949][train_xception.py][INFO]  Epoch:23(644/644) loss:0.000 lr:0.0002993 epoch_Time:0.0min:
+[2020-09-17 00:21:29,480][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9050632911392406, '缓行': 0.12903225806451615, '拥堵': 0.71875, '封闭': 0.9888143176733781}  各类F加权:0.7274635077961786
+[2020-09-17 00:21:29,481][train_xception.py][INFO] val_size: 215  valLoss: 0.3006 valAcc: 0.9068
+[2020-09-17 00:21:29,485][train_xception.py][INFO] Epoch:[23/50] train_acc=0.976 
+[2020-09-17 00:21:29,486][train_xception.py][INFO] learning rate:0.0002992795033032389
+[2020-09-17 00:21:29,486][train_xception.py][INFO] Epoch 24/50
+[2020-09-17 00:21:29,486][train_xception.py][INFO] ----------
+[2020-09-17 00:21:29,486][train_xception.py][INFO] Learning Rate is 0.00029
+[2020-09-17 00:21:31,904][train_xception.py][INFO]  Epoch:24(1/644) loss:0.000 lr:0.0002927 epoch_Time:24.0min:
+[2020-09-17 00:22:10,819][train_xception.py][INFO]  Epoch:24(101/644) loss:0.000 lr:0.0002927 epoch_Time:4.0min:
+[2020-09-17 00:22:49,102][train_xception.py][INFO]  Epoch:24(201/644) loss:0.000 lr:0.0002927 epoch_Time:3.0min:
+[2020-09-17 00:23:28,204][train_xception.py][INFO]  Epoch:24(301/644) loss:0.000 lr:0.0002927 epoch_Time:3.0min:
+[2020-09-17 00:24:06,949][train_xception.py][INFO]  Epoch:24(401/644) loss:0.002 lr:0.0002927 epoch_Time:2.0min:
+[2020-09-17 00:24:46,185][train_xception.py][INFO]  Epoch:24(501/644) loss:0.000 lr:0.0002927 epoch_Time:1.0min:
+[2020-09-17 00:25:25,029][train_xception.py][INFO]  Epoch:24(601/644) loss:0.002 lr:0.0002927 epoch_Time:1.0min:
+[2020-09-17 00:25:41,897][train_xception.py][INFO]  Epoch:24(644/644) loss:0.000 lr:0.0002927 epoch_Time:0.0min:
+[2020-09-17 00:26:02,167][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9067524115755626, '缓行': 0.33333333333333337, '拥堵': 0.6842105263157896, '封闭': 0.9888143176733781}  各类F加权:0.7581307927883111
+[2020-09-17 00:26:02,167][train_xception.py][INFO] val_size: 215  valLoss: 0.3453 valAcc: 0.9138
+[2020-09-17 00:26:02,172][train_xception.py][INFO] Epoch:[24/50] train_acc=0.973 
+[2020-09-17 00:26:02,716][train_xception.py][INFO] learning rate:0.00029267523323348894
+[2020-09-17 00:26:02,716][train_xception.py][INFO] Epoch 25/50
+[2020-09-17 00:26:02,717][train_xception.py][INFO] ----------
+[2020-09-17 00:26:02,717][train_xception.py][INFO] Learning Rate is 0.00029
+[2020-09-17 00:26:05,357][train_xception.py][INFO]  Epoch:25(1/644) loss:0.000 lr:0.0002862 epoch_Time:26.0min:
+[2020-09-17 00:26:43,340][train_xception.py][INFO]  Epoch:25(101/644) loss:0.002 lr:0.0002862 epoch_Time:4.0min:
+[2020-09-17 00:27:22,566][train_xception.py][INFO]  Epoch:25(201/644) loss:0.000 lr:0.0002862 epoch_Time:3.0min:
+[2020-09-17 00:28:01,431][train_xception.py][INFO]  Epoch:25(301/644) loss:0.001 lr:0.0002862 epoch_Time:3.0min:
+[2020-09-17 00:28:40,314][train_xception.py][INFO]  Epoch:25(401/644) loss:0.003 lr:0.0002862 epoch_Time:2.0min:
+[2020-09-17 00:29:19,130][train_xception.py][INFO]  Epoch:25(501/644) loss:0.000 lr:0.0002862 epoch_Time:1.0min:
+[2020-09-17 00:29:58,372][train_xception.py][INFO]  Epoch:25(601/644) loss:0.000 lr:0.0002862 epoch_Time:1.0min:
+[2020-09-17 00:30:15,099][train_xception.py][INFO]  Epoch:25(644/644) loss:0.000 lr:0.0002862 epoch_Time:0.0min:
+[2020-09-17 00:30:34,618][train_xception.py][INFO] 各类单独F1:{'畅通': 0.896551724137931, '缓行': 0.125, '拥堵': 0.7, '封闭': 0.9888143176733781}  各类F加权:0.7201808994831445
+[2020-09-17 00:30:34,618][train_xception.py][INFO] val_size: 215  valLoss: 0.2862 valAcc: 0.9021
+[2020-09-17 00:30:34,623][train_xception.py][INFO] Epoch:[25/50] train_acc=0.977 
+[2020-09-17 00:30:34,623][train_xception.py][INFO] learning rate:0.0002862167011199731
+[2020-09-17 00:30:34,623][train_xception.py][INFO] Epoch 26/50
+[2020-09-17 00:30:34,624][train_xception.py][INFO] ----------
+[2020-09-17 00:30:34,624][train_xception.py][INFO] Learning Rate is 0.00028
+[2020-09-17 00:30:37,022][train_xception.py][INFO]  Epoch:26(1/644) loss:0.000 lr:0.0002799 epoch_Time:24.0min:
+[2020-09-17 00:31:15,203][train_xception.py][INFO]  Epoch:26(101/644) loss:0.000 lr:0.0002799 epoch_Time:4.0min:
+[2020-09-17 00:31:54,594][train_xception.py][INFO]  Epoch:26(201/644) loss:0.000 lr:0.0002799 epoch_Time:3.0min:
+[2020-09-17 00:32:33,670][train_xception.py][INFO]  Epoch:26(301/644) loss:0.000 lr:0.0002799 epoch_Time:3.0min:
+[2020-09-17 00:33:12,593][train_xception.py][INFO]  Epoch:26(401/644) loss:0.022 lr:0.0002799 epoch_Time:2.0min:
+[2020-09-17 00:33:51,595][train_xception.py][INFO]  Epoch:26(501/644) loss:0.000 lr:0.0002799 epoch_Time:1.0min:
+[2020-09-17 00:34:31,382][train_xception.py][INFO]  Epoch:26(601/644) loss:0.003 lr:0.0002799 epoch_Time:1.0min:
+[2020-09-17 00:34:47,951][train_xception.py][INFO]  Epoch:26(644/644) loss:0.000 lr:0.0002799 epoch_Time:0.0min:
+[2020-09-17 00:35:06,824][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9034267912772586, '缓行': 0.125, '拥堵': 0.6896551724137931, '封闭': 0.9888143176733781}  各类F加权:0.7177649579212151
+[2020-09-17 00:35:06,824][train_xception.py][INFO] val_size: 215  valLoss: 0.2883 valAcc: 0.9044
+[2020-09-17 00:35:06,828][train_xception.py][INFO] Epoch:[26/50] train_acc=0.977 
+[2020-09-17 00:35:06,998][train_xception.py][INFO] learning rate:0.00027990069092947924
+[2020-09-17 00:35:06,998][train_xception.py][INFO] Epoch 27/50
+[2020-09-17 00:35:06,998][train_xception.py][INFO] ----------
+[2020-09-17 00:35:06,998][train_xception.py][INFO] Learning Rate is 0.00027
+[2020-09-17 00:35:08,605][train_xception.py][INFO]  Epoch:27(1/644) loss:0.001 lr:0.0002737 epoch_Time:17.0min:
+[2020-09-17 00:35:47,741][train_xception.py][INFO]  Epoch:27(101/644) loss:0.000 lr:0.0002737 epoch_Time:4.0min:
+[2020-09-17 00:36:26,922][train_xception.py][INFO]  Epoch:27(201/644) loss:0.001 lr:0.0002737 epoch_Time:3.0min:
+[2020-09-17 00:37:06,161][train_xception.py][INFO]  Epoch:27(301/644) loss:0.000 lr:0.0002737 epoch_Time:3.0min:
+[2020-09-17 00:37:45,884][train_xception.py][INFO]  Epoch:27(401/644) loss:0.003 lr:0.0002737 epoch_Time:2.0min:
+[2020-09-17 00:38:24,611][train_xception.py][INFO]  Epoch:27(501/644) loss:0.001 lr:0.0002737 epoch_Time:1.0min:
+[2020-09-17 00:39:03,949][train_xception.py][INFO]  Epoch:27(601/644) loss:0.083 lr:0.0002737 epoch_Time:1.0min:
+[2020-09-17 00:39:20,096][train_xception.py][INFO]  Epoch:27(644/644) loss:0.000 lr:0.0002737 epoch_Time:0.0min:
+[2020-09-17 00:39:41,249][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9096573208722741, '缓行': 0.13793103448275862, '拥堵': 0.6551724137931033, '封闭': 0.9866666666666667}  各类F加权:0.7097703297883768
+[2020-09-17 00:39:41,249][train_xception.py][INFO] val_size: 215  valLoss: 0.3176 valAcc: 0.9068
+[2020-09-17 00:39:41,254][train_xception.py][INFO] Epoch:[27/50] train_acc=0.978 
+[2020-09-17 00:39:41,254][train_xception.py][INFO] learning rate:0.00027372405759774416
+[2020-09-17 00:39:41,254][train_xception.py][INFO] Epoch 28/50
+[2020-09-17 00:39:41,255][train_xception.py][INFO] ----------
+[2020-09-17 00:39:41,255][train_xception.py][INFO] Learning Rate is 0.00027
+[2020-09-17 00:39:44,428][train_xception.py][INFO]  Epoch:28(1/644) loss:0.015 lr:0.0002677 epoch_Time:32.0min:
+[2020-09-17 00:40:22,988][train_xception.py][INFO]  Epoch:28(101/644) loss:0.000 lr:0.0002677 epoch_Time:4.0min:
+[2020-09-17 00:41:01,787][train_xception.py][INFO]  Epoch:28(201/644) loss:0.000 lr:0.0002677 epoch_Time:3.0min:
+[2020-09-17 00:41:40,682][train_xception.py][INFO]  Epoch:28(301/644) loss:0.000 lr:0.0002677 epoch_Time:3.0min:
+[2020-09-17 00:42:19,359][train_xception.py][INFO]  Epoch:28(401/644) loss:0.000 lr:0.0002677 epoch_Time:2.0min:
+[2020-09-17 00:42:59,324][train_xception.py][INFO]  Epoch:28(501/644) loss:0.000 lr:0.0002677 epoch_Time:1.0min:
+[2020-09-17 00:43:38,693][train_xception.py][INFO]  Epoch:28(601/644) loss:0.000 lr:0.0002677 epoch_Time:1.0min:
+[2020-09-17 00:43:55,083][train_xception.py][INFO]  Epoch:28(644/644) loss:0.000 lr:0.0002677 epoch_Time:0.0min:
+[2020-09-17 00:44:15,994][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9009584664536741, '缓行': 0.24000000000000002, '拥堵': 0.684931506849315, '封闭': 0.9888143176733781}  各类F加权:0.7391010257695132
+[2020-09-17 00:44:15,994][train_xception.py][INFO] val_size: 215  valLoss: 0.3431 valAcc: 0.9091
+[2020-09-17 00:44:15,998][train_xception.py][INFO] Epoch:[28/50] train_acc=0.979 
+[2020-09-17 00:44:16,169][train_xception.py][INFO] learning rate:0.000267683725463366
+[2020-09-17 00:44:16,169][train_xception.py][INFO] Epoch 29/50
+[2020-09-17 00:44:16,169][train_xception.py][INFO] ----------
+[2020-09-17 00:44:16,169][train_xception.py][INFO] Learning Rate is 0.00026
+[2020-09-17 00:44:18,229][train_xception.py][INFO]  Epoch:29(1/644) loss:0.000 lr:0.0002618 epoch_Time:20.0min:
+[2020-09-17 00:44:56,545][train_xception.py][INFO]  Epoch:29(101/644) loss:0.000 lr:0.0002618 epoch_Time:4.0min:
+[2020-09-17 00:45:35,595][train_xception.py][INFO]  Epoch:29(201/644) loss:0.000 lr:0.0002618 epoch_Time:3.0min:
+[2020-09-17 00:46:14,875][train_xception.py][INFO]  Epoch:29(301/644) loss:0.020 lr:0.0002618 epoch_Time:3.0min:
+[2020-09-17 00:46:53,364][train_xception.py][INFO]  Epoch:29(401/644) loss:0.000 lr:0.0002618 epoch_Time:2.0min:
+[2020-09-17 00:47:32,499][train_xception.py][INFO]  Epoch:29(501/644) loss:0.002 lr:0.0002618 epoch_Time:1.0min:
+[2020-09-17 00:48:12,029][train_xception.py][INFO]  Epoch:29(601/644) loss:0.002 lr:0.0002618 epoch_Time:1.0min:
+[2020-09-17 00:48:28,559][train_xception.py][INFO]  Epoch:29(644/644) loss:0.000 lr:0.0002618 epoch_Time:0.0min:
+[2020-09-17 00:48:47,815][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8924050632911393, '缓行': 0.06666666666666667, '拥堵': 0.6984126984126984, '封闭': 0.9888641425389756}  各类F加权:0.707643306201847
+[2020-09-17 00:48:47,816][train_xception.py][INFO] val_size: 215  valLoss: 0.3298 valAcc: 0.8998
+[2020-09-17 00:48:47,819][train_xception.py][INFO] Epoch:[29/50] train_acc=0.979 
+[2020-09-17 00:48:47,820][train_xception.py][INFO] learning rate:0.00026177668673627475
+[2020-09-17 00:48:47,820][train_xception.py][INFO] Epoch 30/50
+[2020-09-17 00:48:47,820][train_xception.py][INFO] ----------
+[2020-09-17 00:48:47,820][train_xception.py][INFO] Learning Rate is 0.00026
+[2020-09-17 00:48:49,383][train_xception.py][INFO]  Epoch:30(1/644) loss:0.000 lr:0.0002560 epoch_Time:15.0min:
+[2020-09-17 00:49:28,530][train_xception.py][INFO]  Epoch:30(101/644) loss:0.000 lr:0.0002560 epoch_Time:4.0min:
+[2020-09-17 00:50:07,216][train_xception.py][INFO]  Epoch:30(201/644) loss:0.000 lr:0.0002560 epoch_Time:3.0min:
+[2020-09-17 00:50:47,317][train_xception.py][INFO]  Epoch:30(301/644) loss:0.000 lr:0.0002560 epoch_Time:3.0min:
+[2020-09-17 00:51:26,195][train_xception.py][INFO]  Epoch:30(401/644) loss:0.001 lr:0.0002560 epoch_Time:2.0min:
+[2020-09-17 00:52:05,443][train_xception.py][INFO]  Epoch:30(501/644) loss:0.000 lr:0.0002560 epoch_Time:1.0min:
+[2020-09-17 00:52:44,712][train_xception.py][INFO]  Epoch:30(601/644) loss:0.000 lr:0.0002560 epoch_Time:1.0min:
+[2020-09-17 00:53:01,870][train_xception.py][INFO]  Epoch:30(644/644) loss:0.000 lr:0.0002560 epoch_Time:0.0min:
+[2020-09-17 00:53:20,626][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9009584664536741, '缓行': 0.24999999999999994, '拥堵': 0.6666666666666666, '封闭': 0.9865470852017937}  各类F加权:0.7347146807260849
+[2020-09-17 00:53:20,626][train_xception.py][INFO] val_size: 215  valLoss: 0.3806 valAcc: 0.9068
+[2020-09-17 00:53:20,631][train_xception.py][INFO] Epoch:[30/50] train_acc=0.981 
+[2020-09-17 00:53:20,836][train_xception.py][INFO] learning rate:0.00025600000000000004
+[2020-09-17 00:53:20,836][train_xception.py][INFO] Epoch 31/50
+[2020-09-17 00:53:20,837][train_xception.py][INFO] ----------
+[2020-09-17 00:53:20,837][train_xception.py][INFO] Learning Rate is 0.00025
+[2020-09-17 00:53:23,388][train_xception.py][INFO]  Epoch:31(1/644) loss:0.000 lr:0.0002504 epoch_Time:25.0min:
+[2020-09-17 00:54:01,319][train_xception.py][INFO]  Epoch:31(101/644) loss:0.005 lr:0.0002504 epoch_Time:4.0min:
+[2020-09-17 00:54:41,091][train_xception.py][INFO]  Epoch:31(201/644) loss:0.000 lr:0.0002504 epoch_Time:3.0min:
+[2020-09-17 00:55:20,414][train_xception.py][INFO]  Epoch:31(301/644) loss:0.003 lr:0.0002504 epoch_Time:3.0min:
+[2020-09-17 00:55:59,004][train_xception.py][INFO]  Epoch:31(401/644) loss:0.000 lr:0.0002504 epoch_Time:2.0min:
+[2020-09-17 00:56:38,462][train_xception.py][INFO]  Epoch:31(501/644) loss:0.000 lr:0.0002504 epoch_Time:1.0min:
+[2020-09-17 00:57:17,665][train_xception.py][INFO]  Epoch:31(601/644) loss:0.000 lr:0.0002504 epoch_Time:1.0min:
+[2020-09-17 00:57:34,269][train_xception.py][INFO]  Epoch:31(644/644) loss:0.000 lr:0.0002504 epoch_Time:0.0min:
+[2020-09-17 00:57:53,695][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8924050632911393, '缓行': 0.07407407407407408, '拥堵': 0.696969696969697, '封闭': 0.9888641425389756}  各类F加权:0.7086918872504282
+[2020-09-17 00:57:53,695][train_xception.py][INFO] val_size: 215  valLoss: 0.3711 valAcc: 0.9021
+[2020-09-17 00:57:53,699][train_xception.py][INFO] Epoch:[31/50] train_acc=0.981 
+[2020-09-17 00:57:53,700][train_xception.py][INFO] learning rate:0.00025035078874698975
+[2020-09-17 00:57:53,700][train_xception.py][INFO] Epoch 32/50
+[2020-09-17 00:57:53,700][train_xception.py][INFO] ----------
+[2020-09-17 00:57:53,701][train_xception.py][INFO] Learning Rate is 0.00024
+[2020-09-17 00:57:56,081][train_xception.py][INFO]  Epoch:32(1/644) loss:0.000 lr:0.0002448 epoch_Time:25.0min:
+[2020-09-17 00:58:38,764][train_xception.py][INFO]  Epoch:32(101/644) loss:0.001 lr:0.0002448 epoch_Time:4.0min:
+[2020-09-17 00:59:17,508][train_xception.py][INFO]  Epoch:32(201/644) loss:0.002 lr:0.0002448 epoch_Time:3.0min:
+[2020-09-17 00:59:56,074][train_xception.py][INFO]  Epoch:32(301/644) loss:0.001 lr:0.0002448 epoch_Time:2.0min:
+[2020-09-17 01:00:35,204][train_xception.py][INFO]  Epoch:32(401/644) loss:0.000 lr:0.0002448 epoch_Time:2.0min:
+[2020-09-17 01:01:14,360][train_xception.py][INFO]  Epoch:32(501/644) loss:0.001 lr:0.0002448 epoch_Time:1.0min:
+[2020-09-17 01:01:54,085][train_xception.py][INFO]  Epoch:32(601/644) loss:0.005 lr:0.0002448 epoch_Time:0.0min:
+[2020-09-17 01:02:10,583][train_xception.py][INFO]  Epoch:32(644/644) loss:0.000 lr:0.0002448 epoch_Time:0.0min:
+[2020-09-17 01:02:28,160][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8952380952380952, '缓行': 0.13793103448275862, '拥堵': 0.7076923076923077, '封闭': 0.9888641425389756}  各类F加权:0.7249633657436438
+[2020-09-17 01:02:28,160][train_xception.py][INFO] val_size: 215  valLoss: 0.3466 valAcc: 0.9044
+[2020-09-17 01:02:28,165][train_xception.py][INFO] Epoch:[32/50] train_acc=0.984 
+[2020-09-17 01:02:28,366][train_xception.py][INFO] learning rate:0.0002448262399462495
+[2020-09-17 01:02:28,366][train_xception.py][INFO] Epoch 33/50
+[2020-09-17 01:02:28,366][train_xception.py][INFO] ----------
+[2020-09-17 01:02:28,367][train_xception.py][INFO] Learning Rate is 0.00024
+[2020-09-17 01:02:30,802][train_xception.py][INFO]  Epoch:33(1/644) loss:0.000 lr:0.0002394 epoch_Time:24.0min:
+[2020-09-17 01:03:10,025][train_xception.py][INFO]  Epoch:33(101/644) loss:0.000 lr:0.0002394 epoch_Time:4.0min:
+[2020-09-17 01:03:48,799][train_xception.py][INFO]  Epoch:33(201/644) loss:0.000 lr:0.0002394 epoch_Time:3.0min:
+[2020-09-17 01:04:27,840][train_xception.py][INFO]  Epoch:33(301/644) loss:0.005 lr:0.0002394 epoch_Time:3.0min:
+[2020-09-17 01:05:07,307][train_xception.py][INFO]  Epoch:33(401/644) loss:0.001 lr:0.0002394 epoch_Time:2.0min:
+[2020-09-17 01:05:46,963][train_xception.py][INFO]  Epoch:33(501/644) loss:0.000 lr:0.0002394 epoch_Time:1.0min:
+[2020-09-17 01:06:26,051][train_xception.py][INFO]  Epoch:33(601/644) loss:0.000 lr:0.0002394 epoch_Time:1.0min:
+[2020-09-17 01:06:42,811][train_xception.py][INFO]  Epoch:33(644/644) loss:0.042 lr:0.0002394 epoch_Time:0.0min:
+[2020-09-17 01:07:01,998][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9009584664536741, '缓行': 0.22222222222222224, '拥堵': 0.676056338028169, '封闭': 0.9888143176733781}  各类F加权:0.7328829195676139
+[2020-09-17 01:07:01,999][train_xception.py][INFO] val_size: 215  valLoss: 0.4088 valAcc: 0.9068
+[2020-09-17 01:07:02,003][train_xception.py][INFO] Epoch:[33/50] train_acc=0.983 
+[2020-09-17 01:07:02,004][train_xception.py][INFO] learning rate:0.0002394236026425911
+[2020-09-17 01:07:02,004][train_xception.py][INFO] Epoch 34/50
+[2020-09-17 01:07:02,005][train_xception.py][INFO] ----------
+[2020-09-17 01:07:02,005][train_xception.py][INFO] Learning Rate is 0.00023
+[2020-09-17 01:07:04,516][train_xception.py][INFO]  Epoch:34(1/644) loss:0.004 lr:0.0002341 epoch_Time:25.0min:
+[2020-09-17 01:07:44,012][train_xception.py][INFO]  Epoch:34(101/644) loss:0.001 lr:0.0002341 epoch_Time:4.0min:
+[2020-09-17 01:08:23,818][train_xception.py][INFO]  Epoch:34(201/644) loss:0.003 lr:0.0002341 epoch_Time:3.0min:
+[2020-09-17 01:09:02,752][train_xception.py][INFO]  Epoch:34(301/644) loss:0.001 lr:0.0002341 epoch_Time:2.0min:
+[2020-09-17 01:09:42,077][train_xception.py][INFO]  Epoch:34(401/644) loss:0.000 lr:0.0002341 epoch_Time:2.0min:
+[2020-09-17 01:10:22,014][train_xception.py][INFO]  Epoch:34(501/644) loss:0.000 lr:0.0002341 epoch_Time:1.0min:
+[2020-09-17 01:11:01,892][train_xception.py][INFO]  Epoch:34(601/644) loss:0.006 lr:0.0002341 epoch_Time:1.0min:
+[2020-09-17 01:11:18,579][train_xception.py][INFO]  Epoch:34(644/644) loss:0.000 lr:0.0002341 epoch_Time:0.0min:
+[2020-09-17 01:11:37,686][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9009584664536741, '缓行': 0.20000000000000004, '拥堵': 0.696969696969697, '封闭': 0.9888641425389756}  各类F加权:0.7347324127518668
+[2020-09-17 01:11:37,686][train_xception.py][INFO] val_size: 215  valLoss: 0.3686 valAcc: 0.9068
+[2020-09-17 01:11:37,691][train_xception.py][INFO] Epoch:[34/50] train_acc=0.980 
+[2020-09-17 01:11:37,892][train_xception.py][INFO] learning rate:0.00023414018658679116
+[2020-09-17 01:11:37,892][train_xception.py][INFO] Epoch 35/50
+[2020-09-17 01:11:37,892][train_xception.py][INFO] ----------
+[2020-09-17 01:11:37,893][train_xception.py][INFO] Learning Rate is 0.00023
+[2020-09-17 01:11:40,310][train_xception.py][INFO]  Epoch:35(1/644) loss:0.003 lr:0.0002290 epoch_Time:24.0min:
+[2020-09-17 01:12:18,917][train_xception.py][INFO]  Epoch:35(101/644) loss:0.006 lr:0.0002290 epoch_Time:4.0min:
+[2020-09-17 01:12:59,201][train_xception.py][INFO]  Epoch:35(201/644) loss:0.000 lr:0.0002290 epoch_Time:3.0min:
+[2020-09-17 01:13:38,069][train_xception.py][INFO]  Epoch:35(301/644) loss:0.001 lr:0.0002290 epoch_Time:2.0min:
+[2020-09-17 01:14:17,380][train_xception.py][INFO]  Epoch:35(401/644) loss:0.000 lr:0.0002290 epoch_Time:2.0min:
+[2020-09-17 01:14:57,103][train_xception.py][INFO]  Epoch:35(501/644) loss:0.000 lr:0.0002290 epoch_Time:1.0min:
+[2020-09-17 01:15:36,149][train_xception.py][INFO]  Epoch:35(601/644) loss:0.000 lr:0.0002290 epoch_Time:1.0min:
+[2020-09-17 01:15:53,000][train_xception.py][INFO]  Epoch:35(644/644) loss:0.000 lr:0.0002290 epoch_Time:0.0min:
+[2020-09-17 01:16:11,911][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8952380952380952, '缓行': 0.06666666666666667, '拥堵': 0.7301587301587302, '封闭': 0.9866666666666667}  各类F加权:0.7165714285714286
+[2020-09-17 01:16:11,911][train_xception.py][INFO] val_size: 215  valLoss: 0.3574 valAcc: 0.9021
+[2020-09-17 01:16:11,916][train_xception.py][INFO] Epoch:[35/50] train_acc=0.984 
+[2020-09-17 01:16:11,916][train_xception.py][INFO] learning rate:0.0002289733608959785
+[2020-09-17 01:16:11,917][train_xception.py][INFO] Epoch 36/50
+[2020-09-17 01:16:11,917][train_xception.py][INFO] ----------
+[2020-09-17 01:16:11,917][train_xception.py][INFO] Learning Rate is 0.00022
+[2020-09-17 01:16:14,327][train_xception.py][INFO]  Epoch:36(1/644) loss:0.003 lr:0.0002239 epoch_Time:24.0min:
+[2020-09-17 01:16:53,417][train_xception.py][INFO]  Epoch:36(101/644) loss:0.001 lr:0.0002239 epoch_Time:4.0min:
+[2020-09-17 01:17:32,706][train_xception.py][INFO]  Epoch:36(201/644) loss:0.000 lr:0.0002239 epoch_Time:3.0min:
+[2020-09-17 01:18:11,991][train_xception.py][INFO]  Epoch:36(301/644) loss:0.000 lr:0.0002239 epoch_Time:3.0min:
+[2020-09-17 01:18:51,429][train_xception.py][INFO]  Epoch:36(401/644) loss:0.000 lr:0.0002239 epoch_Time:2.0min:
+[2020-09-17 01:19:31,001][train_xception.py][INFO]  Epoch:36(501/644) loss:0.002 lr:0.0002239 epoch_Time:1.0min:
+[2020-09-17 01:20:10,412][train_xception.py][INFO]  Epoch:36(601/644) loss:0.002 lr:0.0002239 epoch_Time:1.0min:
+[2020-09-17 01:20:27,426][train_xception.py][INFO]  Epoch:36(644/644) loss:0.000 lr:0.0002239 epoch_Time:0.0min:
+[2020-09-17 01:20:49,419][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8917197452229298, '缓行': 0.13333333333333333, '拥堵': 0.7076923076923077, '封闭': 0.9888641425389756}  各类F加权:0.7236919905122422
+[2020-09-17 01:20:49,420][train_xception.py][INFO] val_size: 215  valLoss: 0.3727 valAcc: 0.9021
+[2020-09-17 01:20:49,424][train_xception.py][INFO] Epoch:[36/50] train_acc=0.985 
+[2020-09-17 01:20:49,625][train_xception.py][INFO] learning rate:0.0002239205527435834
+[2020-09-17 01:20:49,626][train_xception.py][INFO] Epoch 37/50
+[2020-09-17 01:20:49,626][train_xception.py][INFO] ----------
+[2020-09-17 01:20:49,626][train_xception.py][INFO] Learning Rate is 0.00022
+[2020-09-17 01:20:51,716][train_xception.py][INFO]  Epoch:37(1/644) loss:0.000 lr:0.0002190 epoch_Time:22.0min:
+[2020-09-17 01:21:30,112][train_xception.py][INFO]  Epoch:37(101/644) loss:0.001 lr:0.0002190 epoch_Time:4.0min:
+[2020-09-17 01:22:09,998][train_xception.py][INFO]  Epoch:37(201/644) loss:0.000 lr:0.0002190 epoch_Time:3.0min:
+[2020-09-17 01:22:48,366][train_xception.py][INFO]  Epoch:37(301/644) loss:0.001 lr:0.0002190 epoch_Time:3.0min:
+[2020-09-17 01:23:27,545][train_xception.py][INFO]  Epoch:37(401/644) loss:0.000 lr:0.0002190 epoch_Time:2.0min:
+[2020-09-17 01:24:07,168][train_xception.py][INFO]  Epoch:37(501/644) loss:0.000 lr:0.0002190 epoch_Time:1.0min:
+[2020-09-17 01:24:46,667][train_xception.py][INFO]  Epoch:37(601/644) loss:0.000 lr:0.0002190 epoch_Time:1.0min:
+[2020-09-17 01:25:03,538][train_xception.py][INFO]  Epoch:37(644/644) loss:0.000 lr:0.0002190 epoch_Time:0.0min:
+[2020-09-17 01:25:22,566][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8980891719745223, '缓行': 0.13793103448275862, '拥堵': 0.7076923076923077, '封闭': 0.9866666666666667}  各类F加权:0.724369483068363
+[2020-09-17 01:25:22,566][train_xception.py][INFO] val_size: 215  valLoss: 0.3882 valAcc: 0.9044
+[2020-09-17 01:25:22,570][train_xception.py][INFO] Epoch:[37/50] train_acc=0.986 
+[2020-09-17 01:25:22,570][train_xception.py][INFO] learning rate:0.00021897924607819537
+[2020-09-17 01:25:22,570][train_xception.py][INFO] Epoch 38/50
+[2020-09-17 01:25:22,571][train_xception.py][INFO] ----------
+[2020-09-17 01:25:22,571][train_xception.py][INFO] Learning Rate is 0.00021
+[2020-09-17 01:25:24,564][train_xception.py][INFO]  Epoch:38(1/644) loss:0.000 lr:0.0002141 epoch_Time:19.0min:
+[2020-09-17 01:26:02,827][train_xception.py][INFO]  Epoch:38(101/644) loss:0.000 lr:0.0002141 epoch_Time:4.0min:
+[2020-09-17 01:26:42,781][train_xception.py][INFO]  Epoch:38(201/644) loss:0.000 lr:0.0002141 epoch_Time:3.0min:
+[2020-09-17 01:27:21,425][train_xception.py][INFO]  Epoch:38(301/644) loss:0.000 lr:0.0002141 epoch_Time:3.0min:
+[2020-09-17 01:28:00,849][train_xception.py][INFO]  Epoch:38(401/644) loss:0.000 lr:0.0002141 epoch_Time:2.0min:
+[2020-09-17 01:28:40,303][train_xception.py][INFO]  Epoch:38(501/644) loss:0.000 lr:0.0002141 epoch_Time:1.0min:
+[2020-09-17 01:29:19,795][train_xception.py][INFO]  Epoch:38(601/644) loss:0.000 lr:0.0002141 epoch_Time:1.0min:
+[2020-09-17 01:29:36,364][train_xception.py][INFO]  Epoch:38(644/644) loss:0.000 lr:0.0002141 epoch_Time:0.0min:
+[2020-09-17 01:29:53,949][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8924050632911393, '缓行': 0.13793103448275862, '拥堵': 0.7076923076923077, '封闭': 0.9866071428571429}  各类F加权:0.7237772626762151
+[2020-09-17 01:29:53,950][train_xception.py][INFO] val_size: 215  valLoss: 0.3934 valAcc: 0.9021
+[2020-09-17 01:29:53,954][train_xception.py][INFO] Epoch:[38/50] train_acc=0.987 
+[2020-09-17 01:29:54,159][train_xception.py][INFO] learning rate:0.00021414698037069282
+[2020-09-17 01:29:54,159][train_xception.py][INFO] Epoch 39/50
+[2020-09-17 01:29:54,159][train_xception.py][INFO] ----------
+[2020-09-17 01:29:54,160][train_xception.py][INFO] Learning Rate is 0.00021
+[2020-09-17 01:29:56,567][train_xception.py][INFO]  Epoch:39(1/644) loss:0.000 lr:0.0002094 epoch_Time:24.0min:
+[2020-09-17 01:30:36,295][train_xception.py][INFO]  Epoch:39(101/644) loss:0.000 lr:0.0002094 epoch_Time:4.0min:
+[2020-09-17 01:31:15,765][train_xception.py][INFO]  Epoch:39(201/644) loss:0.023 lr:0.0002094 epoch_Time:3.0min:
+[2020-09-17 01:31:55,182][train_xception.py][INFO]  Epoch:39(301/644) loss:0.000 lr:0.0002094 epoch_Time:2.0min:
+[2020-09-17 01:32:34,196][train_xception.py][INFO]  Epoch:39(401/644) loss:0.002 lr:0.0002094 epoch_Time:2.0min:
+[2020-09-17 01:33:13,296][train_xception.py][INFO]  Epoch:39(501/644) loss:0.014 lr:0.0002094 epoch_Time:1.0min:
+[2020-09-17 01:33:52,900][train_xception.py][INFO]  Epoch:39(601/644) loss:0.000 lr:0.0002094 epoch_Time:1.0min:
+[2020-09-17 01:34:10,019][train_xception.py][INFO]  Epoch:39(644/644) loss:0.000 lr:0.0002094 epoch_Time:0.0min:
+[2020-09-17 01:34:29,376][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8952380952380952, '缓行': 0.06666666666666667, '拥堵': 0.6984126984126984, '封闭': 0.9866666666666667}  各类F加权:0.7070476190476191
+[2020-09-17 01:34:29,377][train_xception.py][INFO] val_size: 215  valLoss: 0.3793 valAcc: 0.8998
+[2020-09-17 01:34:29,381][train_xception.py][INFO] Epoch:[39/50] train_acc=0.985 
+[2020-09-17 01:34:29,381][train_xception.py][INFO] learning rate:0.0002094213493890198
+[2020-09-17 01:34:29,381][train_xception.py][INFO] Epoch 40/50
+[2020-09-17 01:34:29,381][train_xception.py][INFO] ----------
+[2020-09-17 01:34:29,382][train_xception.py][INFO] Learning Rate is 0.00020
+[2020-09-17 01:34:31,344][train_xception.py][INFO]  Epoch:40(1/644) loss:0.006 lr:0.0002048 epoch_Time:19.0min:
+[2020-09-17 01:35:10,227][train_xception.py][INFO]  Epoch:40(101/644) loss:0.004 lr:0.0002048 epoch_Time:4.0min:
+[2020-09-17 01:35:49,260][train_xception.py][INFO]  Epoch:40(201/644) loss:0.002 lr:0.0002048 epoch_Time:3.0min:
+[2020-09-17 01:36:29,360][train_xception.py][INFO]  Epoch:40(301/644) loss:0.010 lr:0.0002048 epoch_Time:3.0min:
+[2020-09-17 01:37:08,023][train_xception.py][INFO]  Epoch:40(401/644) loss:0.000 lr:0.0002048 epoch_Time:2.0min:
+[2020-09-17 01:37:47,230][train_xception.py][INFO]  Epoch:40(501/644) loss:0.000 lr:0.0002048 epoch_Time:1.0min:
+[2020-09-17 01:38:26,615][train_xception.py][INFO]  Epoch:40(601/644) loss:0.020 lr:0.0002048 epoch_Time:1.0min:
+[2020-09-17 01:38:43,888][train_xception.py][INFO]  Epoch:40(644/644) loss:0.002 lr:0.0002048 epoch_Time:0.0min:
+[2020-09-17 01:39:02,882][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8917197452229298, '缓行': 0.12903225806451615, '拥堵': 0.7076923076923077, '封闭': 0.9866071428571429}  各类F加权:0.7219289755857456
+[2020-09-17 01:39:02,882][train_xception.py][INFO] val_size: 215  valLoss: 0.4180 valAcc: 0.8998
+[2020-09-17 01:39:02,886][train_xception.py][INFO] Epoch:[40/50] train_acc=0.988 
+[2020-09-17 01:39:03,057][train_xception.py][INFO] learning rate:0.00020480000000000004
+[2020-09-17 01:39:03,058][train_xception.py][INFO] Epoch 41/50
+[2020-09-17 01:39:03,058][train_xception.py][INFO] ----------
+[2020-09-17 01:39:03,058][train_xception.py][INFO] Learning Rate is 0.00020
+[2020-09-17 01:39:04,609][train_xception.py][INFO]  Epoch:41(1/644) loss:0.000 lr:0.0002003 epoch_Time:15.0min:
+[2020-09-17 01:39:43,352][train_xception.py][INFO]  Epoch:41(101/644) loss:0.000 lr:0.0002003 epoch_Time:4.0min:
+[2020-09-17 01:40:22,477][train_xception.py][INFO]  Epoch:41(201/644) loss:0.000 lr:0.0002003 epoch_Time:3.0min:
+[2020-09-17 01:41:01,308][train_xception.py][INFO]  Epoch:41(301/644) loss:0.001 lr:0.0002003 epoch_Time:3.0min:
+[2020-09-17 01:41:40,649][train_xception.py][INFO]  Epoch:41(401/644) loss:0.000 lr:0.0002003 epoch_Time:2.0min:
+[2020-09-17 01:42:19,867][train_xception.py][INFO]  Epoch:41(501/644) loss:0.001 lr:0.0002003 epoch_Time:1.0min:
+[2020-09-17 01:43:00,464][train_xception.py][INFO]  Epoch:41(601/644) loss:0.001 lr:0.0002003 epoch_Time:1.0min:
+[2020-09-17 01:43:16,582][train_xception.py][INFO]  Epoch:41(644/644) loss:0.000 lr:0.0002003 epoch_Time:0.0min:
+[2020-09-17 01:43:35,545][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8952380952380952, '缓行': 0.060606060606060615, '拥堵': 0.6666666666666666, '封闭': 0.9866666666666667}  各类F加权:0.6963116883116883
+[2020-09-17 01:43:35,545][train_xception.py][INFO] val_size: 215  valLoss: 0.3894 valAcc: 0.8951
+[2020-09-17 01:43:35,548][train_xception.py][INFO] Epoch:[41/50] train_acc=0.988 
+[2020-09-17 01:43:35,548][train_xception.py][INFO] learning rate:0.00020028063099759182
+[2020-09-17 01:43:35,548][train_xception.py][INFO] Epoch 42/50
+[2020-09-17 01:43:35,548][train_xception.py][INFO] ----------
+[2020-09-17 01:43:35,548][train_xception.py][INFO] Learning Rate is 0.00020
+[2020-09-17 01:43:37,117][train_xception.py][INFO]  Epoch:42(1/644) loss:0.000 lr:0.0001959 epoch_Time:16.0min:
+[2020-09-17 01:44:16,939][train_xception.py][INFO]  Epoch:42(101/644) loss:0.000 lr:0.0001959 epoch_Time:4.0min:
+[2020-09-17 01:44:55,990][train_xception.py][INFO]  Epoch:42(201/644) loss:0.000 lr:0.0001959 epoch_Time:3.0min:
+[2020-09-17 01:45:35,348][train_xception.py][INFO]  Epoch:42(301/644) loss:0.000 lr:0.0001959 epoch_Time:3.0min:
+[2020-09-17 01:46:14,511][train_xception.py][INFO]  Epoch:42(401/644) loss:0.000 lr:0.0001959 epoch_Time:2.0min:
+[2020-09-17 01:46:53,847][train_xception.py][INFO]  Epoch:42(501/644) loss:0.000 lr:0.0001959 epoch_Time:1.0min:
+[2020-09-17 01:47:33,140][train_xception.py][INFO]  Epoch:42(601/644) loss:0.000 lr:0.0001959 epoch_Time:1.0min:
+[2020-09-17 01:47:49,918][train_xception.py][INFO]  Epoch:42(644/644) loss:0.011 lr:0.0001959 epoch_Time:0.0min:
+[2020-09-17 01:48:08,824][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8917197452229298, '缓行': 0.13333333333333333, '拥堵': 0.7076923076923077, '封闭': 0.9888641425389756}  各类F加权:0.7236919905122422
+[2020-09-17 01:48:08,824][train_xception.py][INFO] val_size: 215  valLoss: 0.4090 valAcc: 0.9021
+[2020-09-17 01:48:08,829][train_xception.py][INFO] Epoch:[42/50] train_acc=0.988 
+[2020-09-17 01:48:09,034][train_xception.py][INFO] learning rate:0.0001958609919569996
+[2020-09-17 01:48:09,035][train_xception.py][INFO] Epoch 43/50
+[2020-09-17 01:48:09,035][train_xception.py][INFO] ----------
+[2020-09-17 01:48:09,035][train_xception.py][INFO] Learning Rate is 0.00019
+[2020-09-17 01:48:11,724][train_xception.py][INFO]  Epoch:43(1/644) loss:0.000 lr:0.0001915 epoch_Time:27.0min:
+[2020-09-17 01:48:50,336][train_xception.py][INFO]  Epoch:43(101/644) loss:0.000 lr:0.0001915 epoch_Time:4.0min:
+[2020-09-17 01:49:30,038][train_xception.py][INFO]  Epoch:43(201/644) loss:0.000 lr:0.0001915 epoch_Time:3.0min:
+[2020-09-17 01:50:08,829][train_xception.py][INFO]  Epoch:43(301/644) loss:0.002 lr:0.0001915 epoch_Time:3.0min:
+[2020-09-17 01:50:48,433][train_xception.py][INFO]  Epoch:43(401/644) loss:0.001 lr:0.0001915 epoch_Time:2.0min:
+[2020-09-17 01:51:27,846][train_xception.py][INFO]  Epoch:43(501/644) loss:0.000 lr:0.0001915 epoch_Time:1.0min:
+[2020-09-17 01:52:07,189][train_xception.py][INFO]  Epoch:43(601/644) loss:0.000 lr:0.0001915 epoch_Time:1.0min:
+[2020-09-17 01:52:24,068][train_xception.py][INFO]  Epoch:43(644/644) loss:0.000 lr:0.0001915 epoch_Time:0.0min:
+[2020-09-17 01:52:42,899][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8974358974358975, '缓行': 0.12903225806451615, '拥堵': 0.696969696969697, '封闭': 0.9888641425389756}  各类F加权:0.7201866074629923
+[2020-09-17 01:52:42,899][train_xception.py][INFO] val_size: 215  valLoss: 0.4071 valAcc: 0.9021
+[2020-09-17 01:52:42,904][train_xception.py][INFO] Epoch:[43/50] train_acc=0.988 
+[2020-09-17 01:52:42,904][train_xception.py][INFO] learning rate:0.00019153888211407292
+[2020-09-17 01:52:42,904][train_xception.py][INFO] Epoch 44/50
+[2020-09-17 01:52:42,905][train_xception.py][INFO] ----------
+[2020-09-17 01:52:42,905][train_xception.py][INFO] Learning Rate is 0.00019
+[2020-09-17 01:52:45,166][train_xception.py][INFO]  Epoch:44(1/644) loss:0.001 lr:0.0001873 epoch_Time:22.0min:
+[2020-09-17 01:53:23,962][train_xception.py][INFO]  Epoch:44(101/644) loss:0.000 lr:0.0001873 epoch_Time:4.0min:
+[2020-09-17 01:54:03,071][train_xception.py][INFO]  Epoch:44(201/644) loss:0.000 lr:0.0001873 epoch_Time:3.0min:
+[2020-09-17 01:54:42,489][train_xception.py][INFO]  Epoch:44(301/644) loss:0.000 lr:0.0001873 epoch_Time:3.0min:
+[2020-09-17 01:55:21,112][train_xception.py][INFO]  Epoch:44(401/644) loss:0.000 lr:0.0001873 epoch_Time:2.0min:
+[2020-09-17 01:56:01,033][train_xception.py][INFO]  Epoch:44(501/644) loss:0.001 lr:0.0001873 epoch_Time:1.0min:
+[2020-09-17 01:56:40,326][train_xception.py][INFO]  Epoch:44(601/644) loss:0.000 lr:0.0001873 epoch_Time:1.0min:
+[2020-09-17 01:56:57,243][train_xception.py][INFO]  Epoch:44(644/644) loss:0.033 lr:0.0001873 epoch_Time:0.0min:
+[2020-09-17 01:57:16,523][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8958990536277602, '缓行': 0.0, '拥堵': 0.6206896551724138, '封闭': 0.9866666666666667}  各类F加权:0.6704634685811669
+[2020-09-17 01:57:16,523][train_xception.py][INFO] val_size: 215  valLoss: 0.3890 valAcc: 0.8904
+[2020-09-17 01:57:16,528][train_xception.py][INFO] Epoch:[44/50] train_acc=0.989 
+[2020-09-17 01:57:16,735][train_xception.py][INFO] learning rate:0.0001873121492694329
+[2020-09-17 01:57:16,736][train_xception.py][INFO] Epoch 45/50
+[2020-09-17 01:57:16,736][train_xception.py][INFO] ----------
+[2020-09-17 01:57:16,736][train_xception.py][INFO] Learning Rate is 0.00018
+[2020-09-17 01:57:19,139][train_xception.py][INFO]  Epoch:45(1/644) loss:0.000 lr:0.0001832 epoch_Time:24.0min:
+[2020-09-17 01:57:58,437][train_xception.py][INFO]  Epoch:45(101/644) loss:0.003 lr:0.0001832 epoch_Time:4.0min:
+[2020-09-17 01:58:38,030][train_xception.py][INFO]  Epoch:45(201/644) loss:0.002 lr:0.0001832 epoch_Time:3.0min:
+[2020-09-17 01:59:16,849][train_xception.py][INFO]  Epoch:45(301/644) loss:0.003 lr:0.0001832 epoch_Time:3.0min:
+[2020-09-17 01:59:55,923][train_xception.py][INFO]  Epoch:45(401/644) loss:0.000 lr:0.0001832 epoch_Time:2.0min:
+[2020-09-17 02:00:34,890][train_xception.py][INFO]  Epoch:45(501/644) loss:0.001 lr:0.0001832 epoch_Time:1.0min:
+[2020-09-17 02:01:14,298][train_xception.py][INFO]  Epoch:45(601/644) loss:0.000 lr:0.0001832 epoch_Time:1.0min:
+[2020-09-17 02:01:31,027][train_xception.py][INFO]  Epoch:45(644/644) loss:0.000 lr:0.0001832 epoch_Time:0.0min:
+[2020-09-17 02:01:50,483][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8980891719745223, '缓行': 0.13333333333333333, '拥堵': 0.6875, '封闭': 0.9866666666666667}  各类F加权:0.7173922505307856
+[2020-09-17 02:01:50,484][train_xception.py][INFO] val_size: 215  valLoss: 0.4200 valAcc: 0.9021
+[2020-09-17 02:01:50,488][train_xception.py][INFO] Epoch:[45/50] train_acc=0.988 
+[2020-09-17 02:01:50,489][train_xception.py][INFO] learning rate:0.0001831786887167828
+[2020-09-17 02:01:50,489][train_xception.py][INFO] Epoch 46/50
+[2020-09-17 02:01:50,489][train_xception.py][INFO] ----------
+[2020-09-17 02:01:50,490][train_xception.py][INFO] Learning Rate is 0.00018
+[2020-09-17 02:01:52,864][train_xception.py][INFO]  Epoch:46(1/644) loss:0.003 lr:0.0001791 epoch_Time:23.0min:
+[2020-09-17 02:02:31,939][train_xception.py][INFO]  Epoch:46(101/644) loss:0.000 lr:0.0001791 epoch_Time:4.0min:
+[2020-09-17 02:03:10,727][train_xception.py][INFO]  Epoch:46(201/644) loss:0.000 lr:0.0001791 epoch_Time:3.0min:
+[2020-09-17 02:03:50,464][train_xception.py][INFO]  Epoch:46(301/644) loss:0.000 lr:0.0001791 epoch_Time:3.0min:
+[2020-09-17 02:04:29,259][train_xception.py][INFO]  Epoch:46(401/644) loss:0.000 lr:0.0001791 epoch_Time:2.0min:
+[2020-09-17 02:05:08,394][train_xception.py][INFO]  Epoch:46(501/644) loss:0.000 lr:0.0001791 epoch_Time:1.0min:
+[2020-09-17 02:05:48,406][train_xception.py][INFO]  Epoch:46(601/644) loss:0.000 lr:0.0001791 epoch_Time:1.0min:
+[2020-09-17 02:06:04,543][train_xception.py][INFO]  Epoch:46(644/644) loss:0.000 lr:0.0001791 epoch_Time:0.0min:
+[2020-09-17 02:06:21,456][train_xception.py][INFO] 各类单独F1:{'畅通': 0.9003215434083601, '缓行': 0.18749999999999997, '拥堵': 0.696969696969697, '封闭': 0.9888641425389756}  各类F加权:0.7321687204473353
+[2020-09-17 02:06:21,456][train_xception.py][INFO] val_size: 215  valLoss: 0.4324 valAcc: 0.9044
+[2020-09-17 02:06:21,461][train_xception.py][INFO] Epoch:[46/50] train_acc=0.991 
+[2020-09-17 02:06:21,689][train_xception.py][INFO] learning rate:0.00017913644219486676
+[2020-09-17 02:06:21,690][train_xception.py][INFO] Epoch 47/50
+[2020-09-17 02:06:21,690][train_xception.py][INFO] ----------
+[2020-09-17 02:06:21,690][train_xception.py][INFO] Learning Rate is 0.00018
+[2020-09-17 02:06:24,217][train_xception.py][INFO]  Epoch:47(1/644) loss:0.000 lr:0.0001752 epoch_Time:27.0min:
+[2020-09-17 02:07:04,981][train_xception.py][INFO]  Epoch:47(101/644) loss:0.000 lr:0.0001752 epoch_Time:4.0min:
+[2020-09-17 02:07:44,864][train_xception.py][INFO]  Epoch:47(201/644) loss:0.002 lr:0.0001752 epoch_Time:3.0min:
+[2020-09-17 02:08:24,478][train_xception.py][INFO]  Epoch:47(301/644) loss:0.000 lr:0.0001752 epoch_Time:2.0min:
+[2020-09-17 02:09:03,821][train_xception.py][INFO]  Epoch:47(401/644) loss:0.000 lr:0.0001752 epoch_Time:2.0min:
+[2020-09-17 02:09:42,694][train_xception.py][INFO]  Epoch:47(501/644) loss:0.003 lr:0.0001752 epoch_Time:1.0min:
+[2020-09-17 02:10:22,462][train_xception.py][INFO]  Epoch:47(601/644) loss:0.000 lr:0.0001752 epoch_Time:0.0min:
+[2020-09-17 02:10:38,707][train_xception.py][INFO]  Epoch:47(644/644) loss:0.000 lr:0.0001752 epoch_Time:0.0min:
+[2020-09-17 02:11:00,121][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8924050632911393, '缓行': 0.0625, '拥堵': 0.6557377049180328, '封闭': 0.9888641425389756}  各类F加权:0.694007474820114
+[2020-09-17 02:11:00,121][train_xception.py][INFO] val_size: 215  valLoss: 0.3829 valAcc: 0.8951
+[2020-09-17 02:11:00,126][train_xception.py][INFO] Epoch:[47/50] train_acc=0.992 
+[2020-09-17 02:11:00,126][train_xception.py][INFO] learning rate:0.0001751833968625563
+[2020-09-17 02:11:00,126][train_xception.py][INFO] Epoch 48/50
+[2020-09-17 02:11:00,127][train_xception.py][INFO] ----------
+[2020-09-17 02:11:00,127][train_xception.py][INFO] Learning Rate is 0.00017
+[2020-09-17 02:11:02,689][train_xception.py][INFO]  Epoch:48(1/644) loss:0.000 lr:0.0001713 epoch_Time:25.0min:
+[2020-09-17 02:11:41,129][train_xception.py][INFO]  Epoch:48(101/644) loss:0.000 lr:0.0001713 epoch_Time:4.0min:
+[2020-09-17 02:12:20,082][train_xception.py][INFO]  Epoch:48(201/644) loss:0.000 lr:0.0001713 epoch_Time:3.0min:
+[2020-09-17 02:12:58,504][train_xception.py][INFO]  Epoch:48(301/644) loss:0.001 lr:0.0001713 epoch_Time:3.0min:
+[2020-09-17 02:13:38,169][train_xception.py][INFO]  Epoch:48(401/644) loss:0.000 lr:0.0001713 epoch_Time:2.0min:
+[2020-09-17 02:14:17,316][train_xception.py][INFO]  Epoch:48(501/644) loss:0.010 lr:0.0001713 epoch_Time:1.0min:
+[2020-09-17 02:14:56,487][train_xception.py][INFO]  Epoch:48(601/644) loss:0.000 lr:0.0001713 epoch_Time:1.0min:
+[2020-09-17 02:15:13,798][train_xception.py][INFO]  Epoch:48(644/644) loss:0.000 lr:0.0001713 epoch_Time:0.0min:
+[2020-09-17 02:15:32,762][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8980891719745223, '缓行': 0.125, '拥堵': 0.6451612903225806, '封闭': 0.9866666666666667}  各类F加权:0.7030239709608932
+[2020-09-17 02:15:32,763][train_xception.py][INFO] val_size: 215  valLoss: 0.4110 valAcc: 0.8974
+[2020-09-17 02:15:32,766][train_xception.py][INFO] Epoch:[48/50] train_acc=0.992 
+[2020-09-17 02:15:32,937][train_xception.py][INFO] learning rate:0.00017131758429655424
+[2020-09-17 02:15:32,938][train_xception.py][INFO] Epoch 49/50
+[2020-09-17 02:15:32,938][train_xception.py][INFO] ----------
+[2020-09-17 02:15:32,938][train_xception.py][INFO] Learning Rate is 0.00017
+[2020-09-17 02:15:35,170][train_xception.py][INFO]  Epoch:49(1/644) loss:0.000 lr:0.0001675 epoch_Time:22.0min:
+[2020-09-17 02:16:14,767][train_xception.py][INFO]  Epoch:49(101/644) loss:0.000 lr:0.0001675 epoch_Time:4.0min:
+[2020-09-17 02:16:53,842][train_xception.py][INFO]  Epoch:49(201/644) loss:0.000 lr:0.0001675 epoch_Time:3.0min:
+[2020-09-17 02:17:33,129][train_xception.py][INFO]  Epoch:49(301/644) loss:0.000 lr:0.0001675 epoch_Time:2.0min:
+[2020-09-17 02:18:12,286][train_xception.py][INFO]  Epoch:49(401/644) loss:0.000 lr:0.0001675 epoch_Time:2.0min:
+[2020-09-17 02:18:51,556][train_xception.py][INFO]  Epoch:49(501/644) loss:0.000 lr:0.0001675 epoch_Time:1.0min:
+[2020-09-17 02:19:30,556][train_xception.py][INFO]  Epoch:49(601/644) loss:0.000 lr:0.0001675 epoch_Time:1.0min:
+[2020-09-17 02:19:47,448][train_xception.py][INFO]  Epoch:49(644/644) loss:0.000 lr:0.0001675 epoch_Time:0.0min:
+[2020-09-17 02:20:07,827][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8980891719745223, '缓行': 0.13793103448275862, '拥堵': 0.676923076923077, '封闭': 0.9866666666666667}  各类F加权:0.7151387138375938
+[2020-09-17 02:20:07,827][train_xception.py][INFO] val_size: 215  valLoss: 0.4158 valAcc: 0.9021
+[2020-09-17 02:20:07,832][train_xception.py][INFO] Epoch:[49/50] train_acc=0.992 
+[2020-09-17 02:20:07,832][train_xception.py][INFO] learning rate:0.00016753707951121583
+[2020-09-17 02:20:07,832][train_xception.py][INFO] Epoch 50/50
+[2020-09-17 02:20:07,833][train_xception.py][INFO] ----------
+[2020-09-17 02:20:07,833][train_xception.py][INFO] Learning Rate is 0.00016
+[2020-09-17 02:20:10,317][train_xception.py][INFO]  Epoch:50(1/644) loss:0.001 lr:0.0001638 epoch_Time:24.0min:
+[2020-09-17 02:20:48,599][train_xception.py][INFO]  Epoch:50(101/644) loss:0.000 lr:0.0001638 epoch_Time:4.0min:
+[2020-09-17 02:21:27,398][train_xception.py][INFO]  Epoch:50(201/644) loss:0.001 lr:0.0001638 epoch_Time:3.0min:
+[2020-09-17 02:22:06,816][train_xception.py][INFO]  Epoch:50(301/644) loss:0.000 lr:0.0001638 epoch_Time:3.0min:
+[2020-09-17 02:22:46,413][train_xception.py][INFO]  Epoch:50(401/644) loss:0.000 lr:0.0001638 epoch_Time:2.0min:
+[2020-09-17 02:23:26,428][train_xception.py][INFO]  Epoch:50(501/644) loss:0.000 lr:0.0001638 epoch_Time:1.0min:
+[2020-09-17 02:24:05,732][train_xception.py][INFO]  Epoch:50(601/644) loss:0.000 lr:0.0001638 epoch_Time:1.0min:
+[2020-09-17 02:24:22,864][train_xception.py][INFO]  Epoch:50(644/644) loss:0.000 lr:0.0001638 epoch_Time:0.0min:
+[2020-09-17 02:24:41,836][train_xception.py][INFO] 各类单独F1:{'畅通': 0.8996763754045307, '缓行': 0.18181818181818185, '拥堵': 0.6865671641791045, '封闭': 0.9888641425389756}  各类F加权:0.7278470801734109
+[2020-09-17 02:24:41,837][train_xception.py][INFO] val_size: 215  valLoss: 0.4863 valAcc: 0.9021
+[2020-09-17 02:24:41,840][train_xception.py][INFO] Epoch:[50/50] train_acc=0.994 
+[2020-09-17 02:24:42,014][train_xception.py][INFO] Best WeightF1: 0.758
+[2020-09-17 02:24:42,014][train_xception.py][INFO] Training complete in 229m 59s
