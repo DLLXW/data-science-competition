@@ -4,7 +4,7 @@
 
 ### 更新进度说明
 #### 2020/12/22
-- [天马杯--科技创新大赛--ai+智能质检(语音->文字+文本分类)](https://aicontest.msxf.com/)(**Rank6 三等奖**)
+- [天马杯--科技创新大赛--ai+智能质检(语音->文字+文本分类)](https://github.com/DLLXW/data-science-competition/tree/main/else/%E5%A4%A9%E9%A9%AC%E6%9D%AF--AI%2Bz%E6%99%BA%E8%83%BD%E8%B4%A8%E6%A3%80)(**Rank6 三等奖**)
 #### 2020/12/07
 - [华为云“云上先锋”·垃圾图像分类线上92+的baseline](https://github.com/DLLXW/data-science-competition/tree/main/%E5%8D%8E%E4%B8%BA/Huawei-cloud-%E5%9E%83%E5%9C%BE%E5%88%86%E7%B1%BB)
 
