@@ -3,12 +3,12 @@
 >  该仓库用于记录和定期提供各大数据科学竞赛的赛事消息和原创baseline，思路分享以及博主的一些竞赛心得和学习资料等. 主要涵盖：kaggle, 阿里天池，华为云大赛校园赛，百度aistudio，和鲸社区，datafountain等
 
 ### 更新进度说明
+#### 2020/12/22
+- [天马杯--科技创新大赛--ai+智能质检(语音->文字+文本分类)](https://aicontest.msxf.com/)(**Rank6 三等奖**)
 #### 2020/12/07
 - [华为云“云上先锋”·垃圾图像分类线上92+的baseline](https://github.com/DLLXW/data-science-competition/tree/main/%E5%8D%8E%E4%B8%BA/Huawei-cloud-%E5%9E%83%E5%9C%BE%E5%88%86%E7%B1%BB)
 
 - [DC竞赛平台--one-city编程大赛（文本分类)](https://github.com/DLLXW/data-science-competition/tree/main/dc%E7%AB%9E%E8%B5%9B/one-city%E7%BC%96%E7%A8%8B%E5%A4%A7%E8%B5%9B)(**Top4%**)
-#### 2020/11/28
-- [华为云-“华为云杯”2020人工智能创新应用大赛--图像分割](https://github.com/DLLXW/data-science-competition/tree/main/%E5%8D%8E%E4%B8%BA/Huawei-cloud2020%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%88%9B%E6%96%B0%E5%BA%94%E7%94%A8%E5%A4%A7%E8%B5%9B--%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2)-baseline(两个75+的模型训练和线上部署代码)(**Top5%**)
 #### 2020/11/15
 - [CCF2020企业非法集资预测a榜848,b榜842](https://github.com/DLLXW/data-science-competition/tree/main/datafountain)(**Top1%**)
 #### 2020/10/15:
