@@ -34,7 +34,7 @@
 - 从原图左上角开始切图,切出来图像的左上角记为x,y,
 - 那么可以容易想到y依次为:0,512,1024,....,5120.但接下来却并非是5632,因为5632+640>6000,所以这里要对切图的overlop做一个调整,最后一步的y=6000-640.(这是最关键的一点！！！)
 
-<img src="D:\github_qyl\data-science-competition\天池\2021广东工业智造创新大赛\slice\5.png" alt="切出缺陷位置" style="zoom:33%;" />
+<img src="slice/5.png" alt="切出缺陷位置" style="zoom:33%;" />
 
 #### 关于标签的变化
 
@@ -51,12 +51,15 @@
 
 
 
-<img src="D:\github_qyl\data-science-competition\天池\2021广东工业智造创新大赛\slice\3.jpg" alt="几何关系" style="zoom:50%;" />
+<img src="slice/3.jpg" alt="几何关系" style="zoom:50%;" />
 
 **可视化证明标签变化正确:**
 
-<img src="D:\github_qyl\data-science-competition\天池\2021广东工业智造创新大赛\slice\6.png" style="zoom:50%;" />
+<img src="slice/6.png" style="zoom:50%;" />
 
 #### 关于推理
 
 推理部分没有标签的变化,主要需要考虑的是将切好的图进行预测后再拼起来,这个操作实质上是上面的逆向操作。反过来就行，完事之后再来一个整体的NMS即可!
+
+
+关于代码:等后面把整个baseline做好了再开源吧,ps：如果有算力的大佬愿意合作的请加我github主页微信
