@@ -13,7 +13,7 @@ class_name_dic = {
  }
 rawImgDir='/media/ssd/compete_datasets/tile_round1_train_20201231/train_imgs/'
 rawLabelDir='/media/ssd/compete_datasets/tile_round1_train_20201231/train_annos.json'
-anno_dir='./voc/Annotations/'
+anno_dir='./yolov5/voc/Annotations/'
 if not os.path.exists(anno_dir):
     os.makedirs(anno_dir)
 with open(rawLabelDir) as f:

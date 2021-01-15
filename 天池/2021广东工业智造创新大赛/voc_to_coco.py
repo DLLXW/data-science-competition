@@ -129,7 +129,7 @@ if __name__ == '__main__':
         os.makedirs(os.path.join(root_path, 'coco/train2017'))
     if not os.path.exists(os.path.join(root_path, 'coco/val2017')):
         os.makedirs(os.path.join(root_path, 'coco/val2017'))
-    xml_dir = os.path.join(root_path,'voc/Annotations') #已知的voc的标注
+    xml_dir = os.path.join(root_path,'./yolov5/voc/Annotations') #已知的voc的标注
 
     xml_labels = os.listdir(xml_dir)
     np.random.shuffle(xml_labels)
