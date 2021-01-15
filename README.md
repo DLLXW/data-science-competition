@@ -5,7 +5,7 @@
 ###
 ### 更新进度说明
 #### 2021/1/06
-- [天池--2021广东工业制造创新大赛--标注转换脚本](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/2021%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E6%99%BA%E9%80%A0%E5%88%9B%E6%96%B0%E5%A4%A7%E8%B5%9B)
+- [天池--2021广东工业制造创新大赛(瓷砖表面瑕疵检测)--标注转换脚本/切图思路](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/2021%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E6%99%BA%E9%80%A0%E5%88%9B%E6%96%B0%E5%A4%A7%E8%B5%9B)
 
 #### 2021/1/05
 - [华为云“云上先锋”·垃圾图像分类](https://github.com/DLLXW/data-science-competition/tree/main/%E5%8D%8E%E4%B8%BA/%E5%8D%8E%E4%B8%BA%E4%BA%91-%E4%BA%91%E4%B8%8A%E5%85%88%E9%94%8B-%E5%9E%83%E5%9C%BE%E5%9B%BE%E7%89%87%E5%88%86%E7%B1%BB)(**冠军**)
@@ -16,15 +16,15 @@
 
 - [DC竞赛平台--one-city编程大赛（文本分类)](https://github.com/DLLXW/data-science-competition/tree/main/dc%E7%AB%9E%E8%B5%9B/one-city%E7%BC%96%E7%A8%8B%E5%A4%A7%E8%B5%9B)(**Top4%**)
 #### 2020/11/15
-- [CCF2020企业非法集资预测a榜848,b榜842](https://github.com/DLLXW/data-science-competition/tree/main/datafountain)(**Top1%**)
+- [CCF2020企业非法集资预测a榜848,b榜842(数据挖掘)](https://github.com/DLLXW/data-science-competition/tree/main/datafountain)(**Top1%**)
 #### 2020/10/15:
-- [和鲸社区-人工智能挑战赛复赛](https://github.com/DLLXW/data-science-competition/tree/main/%E5%92%8C%E9%B2%B8/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8C%91%E6%88%98%E8%B5%9B)(**亚军**)
+- [和鲸社区-人工智能挑战赛(天气图像分类)](https://github.com/DLLXW/data-science-competition/tree/main/%E5%92%8C%E9%B2%B8/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8C%91%E6%88%98%E8%B5%9B)(**亚军**)
 
-- [天池-高德地图](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE)(初赛**Rank4**，复赛**Rank7**)
+- [天池-高德地图-(基于视频的动态路况分析)](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/%E9%AB%98%E5%BE%B7%E5%9C%B0%E5%9B%BE)(初赛**Rank4**，复赛**Rank7**)
 
 - [天池-之江杯音频分类](https://github.com/DLLXW/data-science-competition/tree/main/else/%E4%B9%8B%E6%B1%9F%E9%9F%B3%E9%A2%91%E5%88%86%E7%B1%BB)(**亚军**)
 
-- [华为云高校计算机大赛(bdc2020)](https://github.com/DLLXW/data-science-competition/tree/main/%E5%8D%8E%E4%B8%BA/BDC-2020)(**三等奖**)
+- [华为云高校计算机大赛(数据挖掘)](https://github.com/DLLXW/data-science-competition/tree/main/%E5%8D%8E%E4%B8%BA/BDC-2020)(**三等奖**)
 ### 2020/10/
 - [天池-太阳黑子分类](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/%E5%A4%A9%E6%B1%A0-%E5%A4%AA%E9%98%B3%E9%BB%91%E5%AD%90)(赛道一:**Rank10**,赛道二:**Rank4**方案)
 

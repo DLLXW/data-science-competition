@@ -1,5 +1,6 @@
 ## [2021广东工业智造创新大赛—智能算法赛](https://tianchi.aliyun.com/competition/entrance/531846/introduction)
-## 2021.1.14更新 baseline基于yolov5
+
+## 2021.1.15更新 baseline基于yolov5
 
 由于手头只有RTX 2070s，虽然大家都在卷mmdetection,但我这8g算力实在搞不过,配置文件给我我都训不出来，本来这比赛都没打算再做了，那天开源了转换/切图思路后本repo star涨了很多，瑟瑟发抖，正好手头有yolov5的代码和各种转换脚本，所以花了半天时间做一个baseline，而且考虑到速度和精度的均衡（复赛要求<3s）,如果使用two-stage的单图大尺度预测，个人感觉上限有限,而且比赛最后都是拼细节。所以肯定会朝着切图(特别是测试时切图)的方向发展。如果two-stage妄图切图到小块然后预测，3s肯定顶不住，所以选择yolov5作为基线供大家参考！欢迎交流~~
 
@@ -55,12 +56,16 @@ python infer_slice_tile.py #切图预测
 假设:
 
 - 待切的原图大小为:h=6000,w=8192.
+<<<<<<< HEAD
 - overlop比例:0.2，切图尺寸:640x640
+=======
+- 需要切图的大小为:640x640,overlop比例:0.2
+>>>>>>> ff07fbda95ad0570537cd964bc8bc2925ce5b2f3
 - 则步长为512.
 - 从原图左上角开始切图,切出来图像的左上角记为x,y,
 - 那么可以容易想到y依次为:0,512,1024,....,5120.但接下来却并非是5632,因为5632+640>6000,所以这里要对切图的overlop做一个调整,最后一步的y=6000-640.(这是最关键的一点！！！)
 
-<img src="D:\github_qyl\data-science-competition\天池\2021广东工业智造创新大赛\slice\5.png" alt="切出缺陷位置" style="zoom:33%;" />
+<img src="slice/5.png" alt="切出缺陷位置" style="zoom:33%;" />
 
 #### 关于标签的变化
 
@@ -77,12 +82,15 @@ python infer_slice_tile.py #切图预测
 
 
 
-<img src="D:\github_qyl\data-science-competition\天池\2021广东工业智造创新大赛\slice\3.jpg" alt="几何关系" style="zoom:50%;" />
+<img src="slice/3.jpg" alt="几何关系" style="zoom:50%;" />
 
 **可视化证明标签变化正确:**
 
-<img src="D:\github_qyl\data-science-competition\天池\2021广东工业智造创新大赛\slice\6.png" style="zoom:50%;" />
+<img src="slice/6.png" style="zoom:50%;" />
 
 #### 关于推理
 
 推理部分没有标签的变化,主要需要考虑的是将切好的图进行预测后再拼起来,这个操作实质上是上面的逆向操作。反过来就行，完事之后再来一个整体的NMS即可!
+
+
+关于代码:等后面把整个baseline做好了再开源吧,ps：如果有算力的大佬愿意合作的请加我github主页微信
