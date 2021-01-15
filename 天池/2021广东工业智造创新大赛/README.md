@@ -6,6 +6,8 @@
 
 **关于预训练模型**: 这个版本的yolov5是去年六七月份的，现在的[最新版ultralytics/yolov5](https://github.com/ultralytics/yolov5)里面能下载到的预训练模型无法直接用在这套旧版本代码上。所以建议大家都clone目前官方git仓库的最新代码和最新权重。如果非要使用这套yolov5代码，也可以到我的网盘下载[yolov5预训练密码:1234](https://pan.baidu.com/s/1C_C65eAL5T-6wYd5gkbG6w)，下载好了放到yolov5/weights下即可。
 
+**关于环境**:本套代码需要torch>1.4
+
 **切图**：
 
 - 先将图片离线切成640x640, 剔除纯背景,大约会生成1.9w+的训练图像
