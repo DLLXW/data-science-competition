@@ -4,6 +4,8 @@
 
 由于手头只有RTX 2070s，虽然大家都在卷mmdetection,但我这8g算力实在搞不过,配置文件给我我都训不出来，本来这比赛都没打算再做了，那天开源了转换/切图思路后本repo star涨了很多，瑟瑟发抖，正好手头有yolov5的代码和各种转换脚本，所以花了半天时间做一个baseline，而且考虑到速度和精度的均衡（复赛要求<3s）,如果使用two-stage的单图大尺度预测，个人感觉上限有限,而且比赛最后都是拼细节。所以肯定会朝着切图(特别是测试时切图)的方向发展。如果two-stage妄图切图到小块然后预测，3s肯定顶不住，所以选择yolov5作为基线供大家参考！欢迎交流~~
 
+**关于预训练模型**: 这个版本的yolov5是去年六七月份的，现在的[最新版ultralytics/yolov5](https://github.com/ultralytics/yolov5)里面能下载到的预训练模型无法直接用在这套旧版本代码上。所以建议大家都clone目前官方git仓库的最新代码和最新权重。如果非要使用这套yolov5代码，也可以到我的网盘下载[yolov5预训练密码:1234](https://pan.baidu.com/s/1C_C65eAL5T-6wYd5gkbG6w)，下载好了放到yolov5/weights下即可。
+
 **切图**：
 
 - 先将图片离线切成640x640, 剔除纯背景,大约会生成1.9w+的训练图像
@@ -21,7 +23,7 @@
 
 - 切成 640x640 滑动窗口预测，耗时<1.5 h, 平均一张图<3s!.线上50.（低于原图预测的结果我是没想到的,没有NMS后处理？或者代码写错了?或者滑窗就是不行?）
 
-- 长边resize到6400预测,剔除,平均一张图耗时:0.6 s. 线上55+
+- 长边resize到6400预测,平均一张图耗时:0.6 s. 线上55+
 
 代码运行说明:
 
@@ -32,11 +34,10 @@ python convert_to_voc.py #先将原始数据转为VOC格式的标注
 python make_slice_voc.py #将上述图片切为小图，重新制作为voc.
 python convert_voc_to_v5txt.py #将voc标注转换为yolov5的官方格式.
 python make_yolov5_train_val.py #制作yolov5的train/val.
-python train.py #训练参数设置
-python infer_tile.py #单图大尺度预测
-python infer_slice_tile.py #切图预测
 ```
-
+- yolov5/train.py #训练参数设置
+- yolov5/infer_tile.py #单图大尺度预测
+- yolov5/infer_slice_tile.py #切图滑窗预测
 
 为了快速构建基线,所用yolov5版本为很早之前的了，我也一直在使用该版本。这比赛还是建议使用最新的版本(要求torch>1.7),和最新的预训练权重。
 
