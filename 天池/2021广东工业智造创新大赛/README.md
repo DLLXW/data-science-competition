@@ -41,7 +41,7 @@ python make_yolov5_train_val.py #制作yolov5的train/val.
 - yolov5/infer_tile.py #单图大尺度预测
 - yolov5/infer_slice_tile.py #切图滑窗预测
 
-为了快速构建基线,所用yolov5版本为很早之前的了，我也一直在使用该版本。这比赛还是建议使用最新的版本(要求torch>1.7),和最新的预训练权重。
+**关于跑make_slice_voc.py却没有"./yolov5/voc/JPEGImages"的错误,这里的JPEGImage就是原始图像，建议把原始图像复制到voc下，重命名为JPEGImages,或者建立一个软连接。**
 
 总结:
 其实训练切图和预测，特别是预测部分，整个baseline做到还很粗糙。yolov5的速度保证下，在这个比赛后期想必是极具竞争力的。
