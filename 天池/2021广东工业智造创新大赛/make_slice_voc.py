@@ -209,8 +209,8 @@ if __name__=="__main__":
         out_name='qyl'
         slice_im(image_path, ann_path,out_name, outdir, sliceHeight=640, sliceWidth=640)
     else:
-        raw_images_dir='./yolov5/voc/JPEGImages'
-        raw_ann_dir='./yolov5/voc/Annotations'
+        raw_images_dir='./yolov5/voc/JPEGImages'#这里的JPEGImages就是原始的图片,建议建立一个原始图片的软连接到这里(或把所有图片复制到voc/JPEGImages下面)
+        raw_ann_dir='./yolov5/voc/Annotations'#上一步convert_
         slice_voc_dir = './slice/annotations'#切出来的标签也保存为voc格式
         outdir = './slice/JPEGImages'
         if not os.path.exists(slice_voc_dir): os.makedirs(slice_voc_dir)
