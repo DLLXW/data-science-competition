@@ -34,6 +34,3 @@
 
 - [华为DIGIT2020大规模图像检索](https://github.com/DLLXW/data-science-competition/tree/main/%E5%8D%8E%E4%B8%BA/DIGIX2020%E6%A0%A1%E5%9B%AD%E5%A4%A7%E8%B5%9B%E5%9B%BE%E5%83%8F%E6%A3%80%E7%B4%A2)(baseline方案)
 
-- [和鲸社区-人工智能挑战赛](https://github.com/DLLXW/data-science-competition/tree/main/%E5%92%8C%E9%B2%B8/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%8C%91%E6%88%98%E8%B5%9B)(初赛top20方案)
-
-
