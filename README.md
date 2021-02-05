@@ -4,6 +4,8 @@
 
 ###
 ### 更新进度说明
+#### 2021/2/05
+- [天池-2021全国数字生态创新大赛-高分辨率遥感影像分割38+的baseline]()
 #### 2021/1/06
 - [天池--2021广东工业制造创新大赛(瓷砖表面瑕疵检测)--基于yolov5的baseline](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/2021%E5%B9%BF%E4%B8%9C%E5%B7%A5%E4%B8%9A%E6%99%BA%E9%80%A0%E5%88%9B%E6%96%B0%E5%A4%A7%E8%B5%9B)
 
