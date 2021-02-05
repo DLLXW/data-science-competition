@@ -3,8 +3,8 @@
 ## 当前实验结果
 - backnone: efficientb6
 - model: unet++
-- 0.8/0.2 训练/验证数据线上37.3(线下51)
-- 全数据38.14(无TTA)
+- 0.8/0.2 训练/验证数据线上37+(线下51)
+- 全数据**38.51**(无TTA)
 - dice-loss+softCrossEntropy联合Loss
 - optimize: adamW,SGD均可
 - warmUpConsineScheduler

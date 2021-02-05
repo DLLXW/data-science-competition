@@ -1,8 +1,0 @@
-Total Epoch:30 Image_size:(256, 256) Training num:16017  Validation num:3204
-[train] epoch:0 iter:0/1002 0.00% lr:0.000300 loss:1.589942 ETA:59.0min
-[train] epoch:0 iter:50/1002 4.99% lr:0.000300 loss:1.169960 ETA:9.0min
-[train] epoch:0 iter:100/1002 9.98% lr:0.000299 loss:0.895454 ETA:9.0min
-[train] epoch:0 iter:150/1002 14.97% lr:0.000298 loss:0.807491 ETA:8.0min
-[train] epoch:0 iter:200/1002 19.96% lr:0.000297 loss:0.822762 ETA:8.0min
-[train] epoch:0 iter:250/1002 24.95% lr:0.000295 loss:0.803554 ETA:7.0min
-[train] epoch:0 iter:300/1002 29.94% lr:0.000293 loss:0.770976 ETA:7.0min
