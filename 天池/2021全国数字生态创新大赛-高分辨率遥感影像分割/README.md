@@ -1,11 +1,12 @@
 # [2021全国数字生态创新大赛-高分辨率遥感影像分割](https://tianchi.aliyun.com/competition/entrance/531860/introduction)
 
-##2/7更新
-很多朋友讲复现不出效果的原因:
+## 2/7更新
+很多朋友复现不出38+效果，这里做一个原因说明:
 - 因为epoch 30还不够， 原始代码已更正，对于T_0=3, T_mult=2,的cosinscheduler,在44的时候学习率到达最低点，验证也会到达最高。
-- 385的线上结果采用了两个阶段的训练，主要有利用到swa等细节，参考SWA Object Detection。
 
-请大家自行调参，譬如将优化器换成sgd，然后T_0=2, T_mult=2,max_epoch=70，模型会在64/65左右达到最优。(效果应该会好于adamW)
+- 推荐一个涨点神器，参考SWA Object Detection。操作很简单，十来行代码，自行思考，暂不开源。
+
+还有很多参数可调节，我并没有精调参，请大家自行调参，譬如将优化器换成sgd，然后T_0=2, T_mult=2,max_epoch=70，模型会在64/65左右达到最优。(效果应该会好于adamW)
 
 ## 当前实验结果
 - backnone: efficientb6
