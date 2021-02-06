@@ -60,7 +60,7 @@ if not os.path.exists(save_log_dir):
 # 参数设置
 param = {}
 
-param['epochs'] = 30          # 训练轮数
+param['epochs'] = 50          # 训练轮数，请和scheduler的策略对应，不然复现不出效果，对于t0=3,t_mut=2的scheduler来讲，44的时候会达到最优
 param['batch_size'] = 16       # 批大小
 param['lr'] = 1e-2            # 学习率
 param['gamma'] = 0.2          # 学习率衰减系数
