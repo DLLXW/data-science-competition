@@ -4,6 +4,8 @@
 
 ###
 ### 更新进度说明
+#### 2021/2/19
+- [kaggle-Cassava Leaf Disease Classification](https://github.com/DLLXW/data-science-competition/tree/main/kaggle/Cassava%20Leaf%20Disease%20Classification)(**银牌**🥈)
 #### 2021/2/08
 - [MARS数据科学平台-图像分类成长赛——AI集福，“福”字图片识别基于xception的baseline](https://github.com/DLLXW/data-science-competition/tree/main/else/%E7%A6%8F%E5%AD%97%E5%88%86%E7%B1%BB)
 #### 2021/2/05
