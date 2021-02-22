@@ -1,4 +1,4 @@
-# 阿里天池智慧海洋算法赛
+#[阿里天池智慧海洋算法赛](https://tianchi.aliyun.com/competition/entrance/231768/introduction)
 ## 对于*单模testB0.874.py*
 - 所需环境：
 	 - python3

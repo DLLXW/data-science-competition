@@ -2,9 +2,9 @@
 
 >  该仓库用于记录和定期提供各大数据科学竞赛的赛事消息和原创baseline，思路分享以及博主的一些竞赛心得和学习资料等. 主要涵盖：kaggle, 阿里天池，华为云大赛校园赛，百度aistudio，和鲸社区，datafountain等
 
-[baseline合集]()
-###
-### 更新进度说明
+### [Baseline合集](https://github.com/DLLXW/data-science-competition/tree/main/baseline%E5%90%88%E9%9B%86)
+
+### 已完成比赛
 #### 2021/2/19
 - [kaggle-Cassava Leaf Disease Classification](https://github.com/DLLXW/data-science-competition/tree/main/kaggle/Cassava%20Leaf%20Disease%20Classification)(**银牌**🥈)
 
@@ -29,9 +29,6 @@
 ### 2020/10/
 - [天池-太阳黑子分类](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/%E5%A4%A9%E6%B1%A0-%E5%A4%AA%E9%98%B3%E9%BB%91%E5%AD%90)(赛道一:**Rank10**,赛道二:**Rank4**方案)
 
-- [天池-智慧海洋](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/%E5%A4%A9%E6%B1%A0-%E6%99%BA%E6%85%A7%E6%B5%B7%E6%B4%8B)(苟进复赛方案)
 
 - [百度大数据2020流行病预测](https://github.com/DLLXW/data-science-competition/tree/main/%E7%99%BE%E5%BA%A6/%E7%99%BE%E5%BA%A6%E5%A4%A7%E6%95%B0%E6%8D%AE2020)(**三等奖**)
-
-- [华为DIGIT2020大规模图像检索](https://github.com/DLLXW/data-science-competition/tree/main/%E5%8D%8E%E4%B8%BA/DIGIX2020%E6%A0%A1%E5%9B%AD%E5%A4%A7%E8%B5%9B%E5%9B%BE%E5%83%8F%E6%A3%80%E7%B4%A2)(baseline方案)
 
