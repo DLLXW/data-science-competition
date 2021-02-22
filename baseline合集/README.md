@@ -1,7 +1,7 @@
 ## 各个新上线的比赛baseline
 
 #### 2021/2/22
-- [2021 “AI Earth”人工智能创新挑战赛--纯CNN思路分享](https://tianchi.aliyun.com/competition/entrance/531871/introduction)
+- [2021 “AI Earth”人工智能创新挑战赛--纯CNN思路分享](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/2021%20%E2%80%9CAI%20Earth%E2%80%9D%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%88%9B%E6%96%B0%E6%8C%91%E6%88%98%E8%B5%9B)
 
 #### 2021/2/08
 - [MARS数据科学平台-图像分类成长赛——AI集福，“福”字图片识别基于xception的baseline](https://github.com/DLLXW/data-science-competition/tree/main/else/%E7%A6%8F%E5%AD%97%E5%88%86%E7%B1%BB)
