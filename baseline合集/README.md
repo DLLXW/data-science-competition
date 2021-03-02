@@ -1,5 +1,7 @@
 ## 各个新上线的比赛baseline
 
+#### 2021/3/2
+[天池医学影像报告异常检测](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F%E6%8A%A5%E5%91%8A%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B)
 #### 2021/2/22
 - [2021 “AI Earth”人工智能创新挑战赛--纯CNN思路分享](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/2021%20%E2%80%9CAI%20Earth%E2%80%9D%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%88%9B%E6%96%B0%E6%8C%91%E6%88%98%E8%B5%9B)
 

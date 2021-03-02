@@ -2,7 +2,11 @@
 
 >  该仓库用于记录和定期提供各大数据科学竞赛的赛事消息和原创baseline，思路分享以及博主的一些竞赛心得和学习资料等. 主要涵盖：kaggle, 阿里天池，华为云大赛校园赛，百度aistudio，和鲸社区，datafountain等
 
-### [Baseline合集](https://github.com/DLLXW/data-science-competition/tree/main/baseline%E5%90%88%E9%9B%86)
+---
+
+## [正在进行的比赛Baseline合集](https://github.com/DLLXW/data-science-competition/tree/main/baseline%E5%90%88%E9%9B%86)
+
+---
 
 ### 已完成比赛
 #### 2021/2/19
