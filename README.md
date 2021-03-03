@@ -1,13 +1,11 @@
 # data-science-competition
 >  该仓库用于记录和定期提供各大数据科学竞赛的赛事消息和原创baseline，思路分享以及博主的一些竞赛心得和学习资料等. 主要涵盖：kaggle, 阿里天池，华为云大赛校园赛，百度aistudio，和鲸社区，datafountain等
 ---
-
 ## [正在进行的比赛Baseline合集](https://github.com/DLLXW/data-science-competition/tree/main/baseline%E5%90%88%E9%9B%86)
-
 ---
 ## [已完成比赛](https://github.com/DLLXW/data-science-competition)
 #### 2021/3/3
-- [公积金贷款逾期预测](http://data.sd.gov.cn/cmpt/cmptDetail.html?id=26)(**Rank 5/1166**)
+- [公积金贷款逾期预测](https://github.com/DLLXW/data-science-competition/tree/main/dc%E7%AB%9E%E8%B5%9B/%E5%85%AC%E7%A7%AF%E9%87%91%E8%B4%B7%E6%AC%BE%E9%80%BE%E6%9C%9F%E9%A2%84%E6%B5%8B)(**Rank 5/1166**)
 #### 2021/2/19
 - [kaggle-Cassava Leaf Disease Classification](https://github.com/DLLXW/data-science-competition/tree/main/kaggle/Cassava%20Leaf%20Disease%20Classification)(**银牌**🥈)
 
