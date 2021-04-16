@@ -5,7 +5,7 @@
 ---
 ## [已完成比赛](https://github.com/DLLXW/data-science-competition)
 #### 2021/4/16
-- [天池-2021 “AI Earth”人工智能创新挑战赛]()(**Rank 2/2849**)
+- [天池-2021 “AI Earth”人工智能创新挑战赛](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/2021%20%E2%80%9CAI%20Earth%E2%80%9D%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%88%9B%E6%96%B0%E6%8C%91%E6%88%98%E8%B5%9B)(**Rank 2/2849**)
 #### 2021/3/17
 - [kaggle-RANZCR CLiP-Catheter and Line Position Challenge](https://github.com/DLLXW/data-science-competition/tree/main/kaggle/RANZCR%20CLiP%20-%20Catheter%20and%20Line%20Position%20Challenge)(**银牌**)
 #### 2021/3/3

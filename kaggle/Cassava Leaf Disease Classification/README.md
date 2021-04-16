@@ -1,7 +1,7 @@
 # [比赛地址](https://www.kaggle.com/c/cassava-leaf-disease-classification/leaderboard)
 
 ## 成绩
-- 公榜:907,Rank:25 私榜:900,Rank:72。银牌区
+- 公榜:0.907,Rank:25 私榜:0.900,Rank:72。银牌区
 ## 赛题描述
 木薯叶疾病分类，
 - 训练集:21,367张图像,测试集:15000张，
