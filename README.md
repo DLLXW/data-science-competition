@@ -4,6 +4,8 @@
 ## [正在进行的比赛Baseline合集](https://github.com/DLLXW/data-science-competition/tree/main/baseline%E5%90%88%E9%9B%86)
 ---
 ## [已完成比赛](https://github.com/DLLXW/data-science-competition)
+#### 2021/4/16
+- [天池-2021 “AI Earth”人工智能创新挑战赛]()(**Rank 2/2849**)
 #### 2021/3/17
 - [kaggle-RANZCR CLiP-Catheter and Line Position Challenge](https://github.com/DLLXW/data-science-competition/tree/main/kaggle/RANZCR%20CLiP%20-%20Catheter%20and%20Line%20Position%20Challenge)(**银牌**)
 #### 2021/3/3
