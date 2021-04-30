@@ -1,5 +1,6 @@
 ## 各个新上线的比赛baseline
-
+#### 2021/4/30
+- [招商银行2021FinTech数据分析赛道-EDA+Baseline]()
 #### 2021/3/2
 - [天池医学影像报告异常检测-84+baseline](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/%E5%8C%BB%E5%AD%A6%E5%BD%B1%E5%83%8F%E6%8A%A5%E5%91%8A%E5%BC%82%E5%B8%B8%E6%A3%80%E6%B5%8B)
 #### 2021/2/22
