@@ -1,9 +1,14 @@
 # data-science-competition
 >  该仓库用于记录作者本人参加的各大数据科学竞赛的获奖方案源码以及一些新比赛的原创baseline. 主要涵盖：kaggle, 阿里天池，华为云大赛校园赛，百度aistudio，和鲸社区，datafountain等
+
+- [天池主页](https://tianchi.aliyun.com/home/science/scienceDetail?userId=1095279432678)(**5次top1**0)
+- [kaggle主页](https://www.kaggle.com/aimanlim0/competitions)(**3银牌**)
 ---
 ## [正在进行的比赛Baseline合集](https://github.com/DLLXW/data-science-competition/tree/main/baseline%E5%90%88%E9%9B%86)
 ---
 ## [已完成比赛](https://github.com/DLLXW/data-science-competition)
+#### 2021/5/15
+- [kaggle-shopee-Price Match Guarantee](https://github.com/DLLXW/data-science-competition/tree/main/kaggle/shopee)(**银牌**)
 #### 2021/4/16
 - [天池-2021 “AI Earth”人工智能创新挑战赛](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/2021%20%E2%80%9CAI%20Earth%E2%80%9D%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%88%9B%E6%96%B0%E6%8C%91%E6%88%98%E8%B5%9B)(**Rank 2/2849**)
 #### 2021/3/17

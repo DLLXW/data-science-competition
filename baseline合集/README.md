@@ -1,4 +1,6 @@
 ## 各个新上线的比赛baseline
+#### 2021/5/30
+- [2021高校计算机大赛--微信大赛](https://github.com/DLLXW/data-science-competition/tree/main/else/wechat2021)
 #### 2021/4/30
 - [招商银行2021FinTech数据分析赛道-EDA+Baseline](https://github.com/DLLXW/data-science-competition/tree/main/else/%E6%8B%9B%E5%95%86%E9%93%B6%E8%A1%8C2021FinTech)
 #### 2021/3/2
