@@ -1,0 +1,43 @@
+SELECT_FRTS=[
+    'userid','feedid','device','authorid','bgm_song_id','bgm_singer_id',
+    'videoplayseconds',
+    'read_comment_feedid_mean','read_comment_feedid_sum',
+    'read_comment_feedid_count','like_feedid_mean',
+    'like_feedid_sum','like_feedid_count','click_avatar_feedid_mean',
+    'click_avatar_feedid_sum','click_avatar_feedid_count','forward_feedid_mean',
+    'forward_feedid_sum','forward_feedid_count','comment_feedid_mean',
+    'comment_feedid_sum','comment_feedid_count','follow_feedid_mean',
+    'follow_feedid_sum','follow_feedid_count','favorite_feedid_mean',
+    'favorite_feedid_sum','favorite_feedid_count','read_comment_userid_mean',
+    'read_comment_userid_sum','read_comment_userid_count',
+    'like_userid_mean','like_userid_sum','like_userid_count',
+    'click_avatar_userid_mean','click_avatar_userid_sum',
+    'click_avatar_userid_count','forward_userid_mean',
+    'forward_userid_sum','forward_userid_count',
+    'comment_userid_mean','comment_userid_sum',
+    'comment_userid_count','follow_userid_mean',
+    'follow_userid_sum','follow_userid_count','favorite_userid_mean',
+    'favorite_userid_sum','favorite_userid_count'
+    ]
+ONE_HOT_FEATURE = ['feedid','authorid','videoplayseconds','bgm_song_id', 
+                'bgm_singer_id','userid','device']
+#
+DENSE_FEATURE=['videoplayseconds',
+    'read_comment_feedid_mean','read_comment_feedid_sum',
+    'read_comment_feedid_count','like_feedid_mean',
+    'like_feedid_sum','like_feedid_count','click_avatar_feedid_mean',
+    'click_avatar_feedid_sum','click_avatar_feedid_count','forward_feedid_mean',
+    'forward_feedid_sum','forward_feedid_count','comment_feedid_mean',
+    'comment_feedid_sum','comment_feedid_count','follow_feedid_mean',
+    'follow_feedid_sum','follow_feedid_count','favorite_feedid_mean',
+    'favorite_feedid_sum','favorite_feedid_count','read_comment_userid_mean',
+    'read_comment_userid_sum','read_comment_userid_count',
+    'like_userid_mean','like_userid_sum','like_userid_count',
+    'click_avatar_userid_mean','click_avatar_userid_sum',
+    'click_avatar_userid_count','forward_userid_mean',
+    'forward_userid_sum','forward_userid_count',
+    'comment_userid_mean','comment_userid_sum',
+    'comment_userid_count','follow_userid_mean',
+    'follow_userid_sum','follow_userid_count','favorite_userid_mean',
+    'favorite_userid_sum','favorite_userid_count'
+    ]
