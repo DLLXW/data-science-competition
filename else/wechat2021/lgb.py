@@ -27,7 +27,7 @@ class lgb_ctr(object):
             'feature_fraction_seed': 1,
             'learning_rate': 0.05,
             'is_unbalance': True,  # 当训练数据是不平衡的，正负样本相差悬殊的时候，可以将这个属性设为true,此时会自动给少的样本赋予更高的权重
-            'num_leaves': 128,  # 一般设为少于2^(max_depth)
+            'num_leaves': 256,  # 一般设为少于2^(max_depth)
             'max_depth': -1,  # 最大的树深，设为-1时表示不限制树的深度
             'min_child_samples': 15,  # 每个叶子结点最少包含的样本数量，用于正则化，避免过拟合
             'max_bin': 200,  # 设置连续特征或大量类型的离散特征的bins的数量
