@@ -1,7 +1,7 @@
 # 2021中国高校计算机大赛-微信大数据挑战赛
 这部分代码结合了各个baseline ，统一了线下验证方式以及加入了历史统计特征。方便对比lgb和nn效果，也方便再这基础上做更多的特征工程
 ## 实验结果(6 ID特征+历史滑动窗统计ctr特征/曝光特征)：
-- lgb:线上640 线下：635
+- lgb:线上640 线下：635 （加上了feedembedding特征，以及对于feed-info表做的nounique/count特征）
 - deepFM:线上646 线下:660
 ## 环境
 - torch=1.4.0
@@ -39,5 +39,7 @@
 
 ## 参考
 [官方baseline]()
+
 [torch-deepFM-64](https://developers.weixin.qq.com/community/minihome/article/doc/000a84418480380ae32c62e3d56413)
+
 [digix-2020-rank1](https://github.com/digix2020/digix2020_ctr_rank1) 

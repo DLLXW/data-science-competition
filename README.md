@@ -7,6 +7,9 @@
 ## [正在进行的比赛Baseline合集](https://github.com/DLLXW/data-science-competition/tree/main/baseline%E5%90%88%E9%9B%86)
 ---
 ## [已完成比赛](https://github.com/DLLXW/data-science-competition)
+
+#### 2021/6/5
+- [天池--CVPR-Workshop-从多张2D人脸重建3D关键点](https://github.com/DLLXW/data-science-competition/tree/main/kaggle/shopee)(**Rank4**)
 #### 2021/5/15
 - [kaggle-shopee-Price Match Guarantee](https://github.com/DLLXW/data-science-competition/tree/main/kaggle/shopee)(**银牌**)
 #### 2021/4/16

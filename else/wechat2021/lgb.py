@@ -54,12 +54,8 @@ class lgb_ctr(object):
         print(df_train.columns)
         df_test=pd.read_csv(test_path)
         df=pd.concat((df_train,df_test)).reset_index(drop=True)
-        for feature in ONE_HOT_FEATURE:
-            df[feature] = LabelEncoder().fit_transform(df[feature].apply(str))
         #df_feed=pd.read_csv(feed_embedding_dir)
         #df=df.merge(df_feed)
-        for col in ['userid','feedid','device','authorid','bgm_song_id','bgm_singer_id']:
-            df[col] = LabelEncoder().fit_transform(df[col].apply(str))
         train=df.iloc[:df_train.shape[0]].reset_index(drop=True)
         test=df.iloc[df_train.shape[0]:].reset_index(drop=True)
         #
