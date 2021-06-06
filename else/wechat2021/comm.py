@@ -16,6 +16,7 @@ DATASET_PATH = os.path.join(ROOT_PATH, "wechat_algo_data1")
 USER_ACTION = os.path.join(DATASET_PATH, "user_action.csv")
 FEED_INFO = os.path.join(DATASET_PATH, "feed_info.csv")
 FEED_EMBEDDINGS = os.path.join(DATASET_PATH, "feed_embeddings.csv")
+FEED_INFO_FRT=os.path.join(ROOT_PATH,"feed_info_frt.csv")
 # 测试集
 TEST_FILE = os.path.join(DATASET_PATH, "test_a.csv")
 END_DAY = 15
@@ -35,7 +36,9 @@ STAGE_END_DAY = {"online_train": 14, "offline_train": 13, "evaluate": 14, "submi
 # 构造训练数据的天数
 BEFOR_DAY=5
 FEA_FEED_LIST = ['feedid', 'authorid', 'videoplayseconds', 'bgm_song_id', 'bgm_singer_id']
-
+FEED_INFO_FRT_LIST=['authorid_count', 'vPlaysecBucket_count', 'authorid_feedid_nunique', 
+        'authorid_vPlaysecBucket_nunique', 'vPlaysecBucket_feedid_nunique', 'vPlaysecBucket_authorid_nunique']
+FEA_FEED_LIST=FEA_FEED_LIST+FEED_INFO_FRT_LIST
 def create_dir():
     """
     创建所需要的目录
@@ -51,7 +54,37 @@ def create_dir():
         if not os.path.exists(need_dir):
             print('Create dir: %s'%need_dir)
             os.mkdir(need_dir)
-
+def group_fea(df,key,target):
+    tmp=df.groupby(key,as_index=False)[target].agg(
+        {key+'_'+target+'_nunique':'nunique',
+        }).reset_index().drop('index',axis=1)
+    FEED_INFO_FRT_LIST.append(key+'_'+target+'_nunique')
+    return tmp
+def make_feed_info_frt():
+    #------处理feed info 构造类别特征的count、nounique特征
+    CAT_FEATURE_LIST=['feedid','authorid','vPlaysecBucket']
+    feed_info=pd.read_csv(FEED_INFO)
+    feed_info=feed_info.assign(vPlaysecBucket=pd.cut(feed_info.videoplayseconds,[float('-inf'),
+            10,20,40,55,70,float('inf')],
+            labels=[0,1,2,3,4,5]))
+    #
+    feed_info['vPlaysecBucket']=feed_info['vPlaysecBucket'].astype(int)
+    #------feed构造count特征------
+    for f in CAT_FEATURE_LIST:
+        if f!='feedid':
+            tmp=feed_info[f].map(feed_info[f].value_counts())
+            feed_info[f+'_count']=tmp
+            FEED_INFO_FRT_LIST.append(f+'_count')
+    #----------feed构造unique特征---
+    for f in CAT_FEATURE_LIST[1:]:
+        for g in CAT_FEATURE_LIST:
+            if f!=g:
+                tmp=group_fea(feed_info,f,g)
+                feed_info=feed_info.merge(tmp,on=f,how='left')
+    #
+    print(FEED_INFO_FRT_LIST)
+    feed_info.to_csv(FEED_INFO_FRT,index=False)
+    
 def check_file():
     '''
     检查数据文件是否存在
@@ -135,7 +168,8 @@ def merge_frt(df,mode):
     return df
 def make_sample():
     #feed信息
-    feed_info_df = pd.read_csv(FEED_INFO)
+    #feed_info_df = pd.read_csv(FEED_INFO)
+    feed_info_df=pd.read_csv(FEED_INFO_FRT)
     #user行为数据
     user_action_df = pd.read_csv(USER_ACTION)[["userid", "date_", "feedid","device"] + FEA_COLUMN_LIST]
     #原始feed enmbedd数据
@@ -155,7 +189,7 @@ def make_sample():
         tmp = train.drop_duplicates(['userid', 'feedid', action], keep='last')
         df_neg = tmp[tmp[action] == 0]
         #df_neg = df_neg.sample(frac=ACTION_SAMPLE_RATE[action], random_state=42, replace=False)
-        df_neg = df_neg.sample(frac=1., random_state=42, replace=False)
+        #df_neg = df_neg.sample(frac=1., random_state=42, replace=False)
         df_all = pd.concat([df_neg, tmp[tmp[action] == 1]])
         df_all["videoplayseconds"] = np.log(df_all["videoplayseconds"] + 1.0)
         df_all=merge_frt(df_all,mode='train')
@@ -166,17 +200,17 @@ def make_sample():
 def main():
     t = time.time()
     statis_data()
-    #create_dir()
+    create_dir()
+    make_feed_info_frt()
     flag, not_exists_file = check_file()
     if not flag:
         print("请检查目录中是否存在下列文件: ", ",".join(not_exists_file))
         return
     logger.info('Generate statistic feature')
-    #statis_feature(start_day=1, before_day=BEFOR_DAY, agg=['mean','sum','count'])
+    statis_feature(start_day=1, before_day=BEFOR_DAY, agg=['mean','sum','count'])
     make_sample()
     print('Time cost: %.2f s'%(time.time()-t))
 
 
 if __name__ == "__main__":
     main()
-    

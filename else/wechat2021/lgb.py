@@ -7,7 +7,7 @@ from evaluation import uAUC,compute_weighted_score
 from sklearn.preprocessing import OneHotEncoder,LabelEncoder
 from scipy import sparse
 ROOT_PATH="./data/"
-FEED_EMBEDDING_DIR="data/wechat_algo_data1/feed_embeddings_PCA.csv"
+FEED_EMBEDDING_DIR="data/feed_embeddings_PCA.csv"
 # 初赛待预测行为列表
 ACTION_LIST = ["read_comment", "like", "click_avatar",  "forward"]
 # 复赛待预测行为列表
@@ -48,14 +48,13 @@ class lgb_ctr(object):
         self.select_frts=[]
         self.select_frts+=SELECT_FRTS
         #feed embedding by PCA
-        #self.select_frts+=['feed_embed_'+str(i) for i in range(32)]
+        self.select_frts+=['feed_embed_'+str(i) for i in range(32)]
     def process_data(self,train_path,test_path):
         df_train = pd.read_csv(train_path)
-        print(df_train.columns)
         df_test=pd.read_csv(test_path)
         df=pd.concat((df_train,df_test)).reset_index(drop=True)
-        #df_feed=pd.read_csv(feed_embedding_dir)
-        #df=df.merge(df_feed)
+        df_feed=pd.read_csv(FEED_EMBEDDING_DIR)
+        df=df.merge(df_feed)
         train=df.iloc[:df_train.shape[0]].reset_index(drop=True)
         test=df.iloc[df_train.shape[0]:].reset_index(drop=True)
         #
@@ -78,7 +77,7 @@ class lgb_ctr(object):
         train_matrix = lightgbm.Dataset(train_x, label=train_y)
          #-----------
         self.model=lightgbm.train(self.params, train_matrix
-                    ,num_boost_round=200
+                    ,num_boost_round=250
                    )
         print("\n".join(("%s: %.2f" % x) for x in list(sorted(zip(list(train_x.columns), self.model.feature_importance("gain")),
                         key=lambda x: x[1],reverse=True))[:5]))

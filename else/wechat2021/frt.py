@@ -17,10 +17,11 @@ SELECT_FRTS=[
     'comment_userid_mean','comment_userid_sum',
     'comment_userid_count','follow_userid_mean',
     'follow_userid_sum','follow_userid_count','favorite_userid_mean',
-    'favorite_userid_sum','favorite_userid_count'
+    'favorite_userid_sum','favorite_userid_count',
+    'authorid_count', 'vPlaysecBucket_count', 'authorid_feedid_nunique', 
+    'authorid_vPlaysecBucket_nunique',
+    'vPlaysecBucket_feedid_nunique', 'vPlaysecBucket_authorid_nunique'
     ]
-ONE_HOT_FEATURE = ['feedid','authorid','videoplayseconds','bgm_song_id', 
-                'bgm_singer_id','userid','device']
 #
 DENSE_FEATURE=['videoplayseconds',
     'read_comment_feedid_mean','read_comment_feedid_sum',
@@ -39,5 +40,8 @@ DENSE_FEATURE=['videoplayseconds',
     'comment_userid_mean','comment_userid_sum',
     'comment_userid_count','follow_userid_mean',
     'follow_userid_sum','follow_userid_count','favorite_userid_mean',
-    'favorite_userid_sum','favorite_userid_count'
+    'favorite_userid_sum','favorite_userid_count',
+    'authorid_count', 'vPlaysecBucket_count', 'authorid_feedid_nunique', 
+    'authorid_vPlaysecBucket_nunique',
+    'vPlaysecBucket_feedid_nunique', 'vPlaysecBucket_authorid_nunique'
     ]
