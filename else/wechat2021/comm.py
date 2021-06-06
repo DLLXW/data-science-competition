@@ -167,6 +167,16 @@ def merge_frt(df,mode):
     print(df.shape)
     return df
 def make_sample():
+    #根据测试集id分布进行负采样
+    user_action=pd.read_csv(USER_ACTION)
+    test_a=pd.read_csv(TEST_FILE)
+    test_a_user_ids=test_a.userid.unique()
+    test_a_feed_ids=test_a.feedid.unique()
+    test_off_user_ids=user_action[user_action['date_']==14].userid.unique()
+    test_off_feed_ids=user_action[user_action['date_']==14].feedid.unique()
+    test_select_user_ids=list(set(test_a_user_ids).union(set(test_off_user_ids)))
+    test_select_feed_ids=list(set(test_a_feed_ids).union(set(test_off_feed_ids)))
+    #
     #feed信息
     #feed_info_df = pd.read_csv(FEED_INFO)
     feed_info_df=pd.read_csv(FEED_INFO_FRT)
@@ -187,9 +197,12 @@ def make_sample():
     for action in ACTION_LIST:
         print(f"prepare data for {action}")
         tmp = train.drop_duplicates(['userid', 'feedid', action], keep='last')
-        df_neg = tmp[tmp[action] == 0]
+        #df_neg = tmp[tmp[action] == 0]
+        df_neg=tmp[(tmp[action] == 0)
+            & (tmp['userid'].isin(test_select_user_ids))
+            & (tmp['feedid'].isin(test_select_feed_ids))
+        ]
         #df_neg = df_neg.sample(frac=ACTION_SAMPLE_RATE[action], random_state=42, replace=False)
-        #df_neg = df_neg.sample(frac=1., random_state=42, replace=False)
         df_all = pd.concat([df_neg, tmp[tmp[action] == 1]])
         df_all["videoplayseconds"] = np.log(df_all["videoplayseconds"] + 1.0)
         df_all=merge_frt(df_all,mode='train')
@@ -199,15 +212,15 @@ def make_sample():
 #
 def main():
     t = time.time()
-    statis_data()
-    create_dir()
-    make_feed_info_frt()
+    #statis_data()
+    #create_dir()
+    #make_feed_info_frt()
     flag, not_exists_file = check_file()
     if not flag:
         print("请检查目录中是否存在下列文件: ", ",".join(not_exists_file))
         return
     logger.info('Generate statistic feature')
-    statis_feature(start_day=1, before_day=BEFOR_DAY, agg=['mean','sum','count'])
+    #statis_feature(start_day=1, before_day=BEFOR_DAY, agg=['mean','sum','count'])
     make_sample()
     print('Time cost: %.2f s'%(time.time()-t))
 

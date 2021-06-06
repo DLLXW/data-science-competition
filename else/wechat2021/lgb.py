@@ -46,24 +46,24 @@ class lgb_ctr(object):
         self.stage=stage
         self.action=action
         self.select_frts=[]
-        self.select_frts+=SELECT_FRTS
+        self.select_frts+=COMM_FRT
+        cur_frt=[]
+        for frt in SELECT_FRTS:
+            if action in frt:
+                cur_frt.append(frt)
+        #
+        self.select_frts+=cur_frt
         #feed embedding by PCA
         self.select_frts+=['feed_embed_'+str(i) for i in range(32)]
-    def process_data(self,train_path,test_path):
-        df_train = pd.read_csv(train_path)
-        df_test=pd.read_csv(test_path)
-        df=pd.concat((df_train,df_test)).reset_index(drop=True)
-        df_feed=pd.read_csv(FEED_EMBEDDING_DIR)
-        df=df.merge(df_feed)
-        train=df.iloc[:df_train.shape[0]].reset_index(drop=True)
-        test=df.iloc[df_train.shape[0]:].reset_index(drop=True)
-        #
-        return train,test
     def train_test(self):
         #读取训练集数据
         train_path = ROOT_PATH +f'/train_data_for_{self.action}.csv'
         test_path = ROOT_PATH + '/test_data.csv'
-        df_train,df_test=self.process_data(train_path,test_path)
+        df_train = pd.read_csv(train_path)
+        df_test=pd.read_csv(test_path)
+        df_feed=pd.read_csv(FEED_EMBEDDING_DIR)
+        df_train=df_train.merge(df_feed)
+        df_test=df_test.merge(df_feed)
         #
         if self.stage=='offline_train':
             df_val=df_train[df_train['date_']==14].reset_index(drop=True)
@@ -135,8 +135,7 @@ def main(argv):
         ids[["userid", "feedid"]] = ids[["userid", "feedid"]].astype(int)
         res = pd.concat([ids, actions], sort=False, axis=1)
         # 写文件
-        file_name = "submit_lgb.csv"
-        submit_file = os.path.join(ROOT_PATH, 'submit', file_name)
+        submit_file = "./submit_lgb_6_6.csv"
         print('Save to: %s'%submit_file)
         res.to_csv(submit_file, index=False)
 if __name__ == "__main__":
