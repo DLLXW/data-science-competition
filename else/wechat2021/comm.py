@@ -197,11 +197,12 @@ def make_sample():
     for action in ACTION_LIST:
         print(f"prepare data for {action}")
         tmp = train.drop_duplicates(['userid', 'feedid', action], keep='last')
-        #df_neg = tmp[tmp[action] == 0]
-        df_neg=tmp[(tmp[action] == 0)
-            & (tmp['userid'].isin(test_select_user_ids))
-            & (tmp['feedid'].isin(test_select_feed_ids))
-        ]
+        df_neg = tmp[tmp[action] == 0]
+        #如果用lgb，可以采样，用nn就别采了
+        # df_neg=tmp[(tmp[action] == 0)
+        #     & (tmp['userid'].isin(test_select_user_ids))
+        #     & (tmp['feedid'].isin(test_select_feed_ids))
+        # ]
         #df_neg = df_neg.sample(frac=ACTION_SAMPLE_RATE[action], random_state=42, replace=False)
         df_all = pd.concat([df_neg, tmp[tmp[action] == 1]])
         df_all["videoplayseconds"] = np.log(df_all["videoplayseconds"] + 1.0)
