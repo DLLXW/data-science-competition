@@ -7,7 +7,7 @@ from evaluation import uAUC,compute_weighted_score
 from sklearn.preprocessing import OneHotEncoder,LabelEncoder
 from scipy import sparse
 ROOT_PATH="./data/"
-FEED_EMBEDDING_DIR="data/wechat_algo_data1/feed_embeddings_PCA.csv"
+FEED_EMBEDDING_DIR="data/feed_embeddings_PCA.csv"
 # 初赛待预测行为列表
 ACTION_LIST = ["read_comment", "like", "click_avatar",  "forward"]
 # 复赛待预测行为列表
@@ -27,7 +27,7 @@ class lgb_ctr(object):
             'feature_fraction_seed': 1,
             'learning_rate': 0.05,
             'is_unbalance': True,  # 当训练数据是不平衡的，正负样本相差悬殊的时候，可以将这个属性设为true,此时会自动给少的样本赋予更高的权重
-            'num_leaves': 128,  # 一般设为少于2^(max_depth)
+            'num_leaves': 256,  # 一般设为少于2^(max_depth)
             'max_depth': -1,  # 最大的树深，设为-1时表示不限制树的深度
             'min_child_samples': 15,  # 每个叶子结点最少包含的样本数量，用于正则化，避免过拟合
             'max_bin': 200,  # 设置连续特征或大量类型的离散特征的bins的数量
@@ -46,29 +46,24 @@ class lgb_ctr(object):
         self.stage=stage
         self.action=action
         self.select_frts=[]
-        self.select_frts+=SELECT_FRTS
-        #feed embedding by PCA
-        #self.select_frts+=['feed_embed_'+str(i) for i in range(32)]
-    def process_data(self,train_path,test_path):
-        df_train = pd.read_csv(train_path)
-        print(df_train.columns)
-        df_test=pd.read_csv(test_path)
-        df=pd.concat((df_train,df_test)).reset_index(drop=True)
-        for feature in ONE_HOT_FEATURE:
-            df[feature] = LabelEncoder().fit_transform(df[feature].apply(str))
-        #df_feed=pd.read_csv(feed_embedding_dir)
-        #df=df.merge(df_feed)
-        for col in ['userid','feedid','device','authorid','bgm_song_id','bgm_singer_id']:
-            df[col] = LabelEncoder().fit_transform(df[col].apply(str))
-        train=df.iloc[:df_train.shape[0]].reset_index(drop=True)
-        test=df.iloc[df_train.shape[0]:].reset_index(drop=True)
+        self.select_frts+=COMM_FRT
+        cur_frt=[]
+        for frt in SELECT_FRTS:
+            if action in frt:
+                cur_frt.append(frt)
         #
-        return train,test
+        self.select_frts+=cur_frt
+        #feed embedding by PCA
+        self.select_frts+=['feed_embed_'+str(i) for i in range(32)]
     def train_test(self):
         #读取训练集数据
         train_path = ROOT_PATH +f'/train_data_for_{self.action}.csv'
         test_path = ROOT_PATH + '/test_data.csv'
-        df_train,df_test=self.process_data(train_path,test_path)
+        df_train = pd.read_csv(train_path)
+        df_test=pd.read_csv(test_path)
+        df_feed=pd.read_csv(FEED_EMBEDDING_DIR)
+        df_train=df_train.merge(df_feed)
+        df_test=df_test.merge(df_feed)
         #
         if self.stage=='offline_train':
             df_val=df_train[df_train['date_']==14].reset_index(drop=True)
@@ -82,7 +77,7 @@ class lgb_ctr(object):
         train_matrix = lightgbm.Dataset(train_x, label=train_y)
          #-----------
         self.model=lightgbm.train(self.params, train_matrix
-                    ,num_boost_round=200
+                    ,num_boost_round=250
                    )
         print("\n".join(("%s: %.2f" % x) for x in list(sorted(zip(list(train_x.columns), self.model.feature_importance("gain")),
                         key=lambda x: x[1],reverse=True))[:5]))
@@ -140,8 +135,7 @@ def main(argv):
         ids[["userid", "feedid"]] = ids[["userid", "feedid"]].astype(int)
         res = pd.concat([ids, actions], sort=False, axis=1)
         # 写文件
-        file_name = "submit_lgb.csv"
-        submit_file = os.path.join(ROOT_PATH, 'submit', file_name)
+        submit_file = "./submit_lgb_6_6.csv"
         print('Save to: %s'%submit_file)
         res.to_csv(submit_file, index=False)
 if __name__ == "__main__":

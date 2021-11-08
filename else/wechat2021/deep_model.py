@@ -137,7 +137,7 @@ class MyBaseModel(BaseModel):
                 epoch_logs[name] = np.sum(result) / steps_per_epoch
 
             if do_validation:
-                eval_result = self.evaluate(val_x, val_y, userid_list,batch_size)
+                eval_result = self.evaluate(val_x, val_y,userid_list, batch_size)
                 for name, result in eval_result.items():
                     epoch_logs["val_" + name] = result
             # verbose
@@ -173,7 +173,10 @@ class MyBaseModel(BaseModel):
         :return: Dict contains metric names and metric values.
         """
         pred_ans = self.predict(x, batch_size)
+        # y=y.reshape(y.shape[0],)
+        # pred_ans=pred_ans.reshape(pred_ans.shape[0],)
         uauc=uAUC(y,pred_ans,userid_list)
+        print('uauc:',y.shape,pred_ans.shape,uauc)
         eval_result = {}
         eval_result['auc']=uauc
         return eval_result
