@@ -24,6 +24,7 @@ def inference(img_dir):
     #image = cv2.imread(img_dir, cv2.IMREAD_COLOR)
     #image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     image = cv2.imread(img_dir, cv2.IMREAD_UNCHANGED)
+    wd,ht,_=image.shape
     img = transform(image=image)['image']
     img=img.unsqueeze(0)
     #print(img.shape)
@@ -33,7 +34,7 @@ def inference(img_dir):
     #
     pred = output.squeeze().cpu().data.numpy()
     pred = np.argmax(pred,axis=0)
-    return pred
+    return pred,wd,ht
 #
 if __name__=="__main__":
     #input_dir,out_dir=sys.argv[1],sys.argv[2]
@@ -78,10 +79,10 @@ if __name__=="__main__":
     if not os.path.exists(out_dir):os.makedirs(out_dir)
     test_paths=glob.glob(input_dir+'/*')
     for per_path in tqdm(test_paths):
-        result=inference(per_path)
+        result,wd,ht=inference(per_path)
         result=result.astype(np.uint8)
         # img=Image.fromarray(np.uint8(result))
         # img=img.convert('L')
-        img=cv2.resize(result,(512,512),interpolation=cv2.INTER_NEAREST)
+        img=cv2.resize(result,(wd,ht),interpolation=cv2.INTER_NEAREST)
         out_path=os.path.join(out_dir,per_path.split('/')[-1][:-4]+'.png')
         cv2.imwrite(out_path,img)
