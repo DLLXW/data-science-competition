@@ -24,7 +24,7 @@ def inference(img_dir):
     #image = cv2.imread(img_dir, cv2.IMREAD_COLOR)
     #image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     image = cv2.imread(img_dir, cv2.IMREAD_UNCHANGED)
-    wd,ht,_=image.shape
+    ht,wd,_=image.shape
     img = transform(image=image)['image']
     img=img.unsqueeze(0)
     #print(img.shape)
