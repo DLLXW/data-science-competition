@@ -1,0 +1,1 @@
+python infer.py --weights ./runs/train/exp140/weights/best.pt --img 1280 --conf 0.2 --source ../B_test500
