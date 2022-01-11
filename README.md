@@ -10,7 +10,6 @@
 
 #### 2021/12/31
 - [kaggle-Sartorius-Cell Instance Segmentation](https://github.com/DLLXW/kaggle-Sartorius)(**银牌 Rank 17/1505**)
-- [天池--CVPR-Workshop-从多张2D人脸重建3D关键点](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/CVPR2021-PIC-Challenge)(**Rank 3/247**)
 
 #### 2021/6/5
 - [天池--CVPR-Workshop-从多张2D人脸重建3D关键点](https://github.com/DLLXW/data-science-competition/tree/main/%E5%A4%A9%E6%B1%A0/CVPR2021-PIC-Challenge)(**Rank 3/247**)
