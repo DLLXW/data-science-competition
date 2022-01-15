@@ -99,7 +99,7 @@ if __name__=="__main__":
                         default=224, help='input patch size of network input')
     parser.add_argument('--seed', type=int,
                         default=1234, help='random seed')
-    parser.add_argument('--cfg', type=str, default='./configs/swin_base.yaml', 
+    parser.add_argument('--cfg', type=str, default='./configs/swin_tiny_patch4_window7_224_lite.yaml', 
         metavar="FILE", help='path to config file', )
     parser.add_argument(
             "--opts",
@@ -115,7 +115,7 @@ if __name__=="__main__":
     n_class=6
     model = ViT_seg(config, img_size=args.img_size, num_classes=args.num_classes).cuda()
     model= torch.nn.DataParallel(model)
-    checkpoint_dir='./outputs/swin_base/ckpt/cosine_epoch92.pth'
+    checkpoint_dir='./outputs/swin_tiny/ckpt/cosine_epoch92.pth'
     print(checkpoint_dir)
     checkpoints=torch.load(checkpoint_dir)
     if 'state_dict' in checkpoints.keys():
