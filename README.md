@@ -1,8 +1,13 @@
 # data-science-competition
 >  该仓库用于记录作者本人参加的各大数据科学竞赛的获奖方案源码以及一些新比赛的原创baseline. 主要涵盖：kaggle, 阿里天池，华为云大赛校园赛，百度aistudio，和鲸社区，datafountain等
 
+
+**公众号**:limzero带你打比赛
+
+![image](./Wechat.jpeg)
+
 - [天池主页](https://tianchi.aliyun.com/home/science/scienceDetail?userId=1095279432678)(**5次top10**)
-- [kaggle主页](https://www.kaggle.com/aimanlim0/competitions)(**3银牌**)
+- [kaggle主页](https://www.kaggle.com/aimanlim0/competitions)(**4银牌**)
 ---
 ## [正在进行的比赛Baseline合集](https://github.com/DLLXW/data-science-competition/tree/main/baseline%E5%90%88%E9%9B%86)
 ---
