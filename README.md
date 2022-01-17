@@ -2,7 +2,7 @@
 >  该仓库用于记录作者本人参加的各大数据科学竞赛的获奖方案源码以及一些新比赛的原创baseline. 主要涵盖：kaggle, 阿里天池，华为云大赛校园赛，百度aistudio，和鲸社区，datafountain等
 
 
-**公众号**:limzero带你打比赛
+**公众号**:limzero带你打数据科学竞赛
 
 ![image](./Wechat.jpeg)
 
