@@ -1,0 +1,108 @@
+{
+    "model_algorithm": "image_classification",
+    "model_type": "PyTorch",
+    "runtime": "python3.6",
+    "metrics": {
+        "f1": 0,
+        "accuracy": 0,
+        "precision": 0,
+        "recall": 0
+    },
+    "apis": [
+        {
+            "protocol": "http",
+            "url": "/",
+            "method": "post",
+            "request": {
+                "Content-type": "multipart/form-data",
+                "data": {
+                    "type": "object",
+                    "properties": {
+                        "input_img": {
+                            "type": "file"
+                        }
+                    },
+                    "required": [
+                        "input_img"
+                    ]
+                }
+            },
+            "response": {
+                "Content-type": "multipart/form-data",
+                "data": {
+                    "type": "object",
+                    "properties": {
+                        "result": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "result"
+                    ]
+                }
+            }
+        }
+    ],
+    "dependencies": [
+        {
+            "installer": "pip",
+            "packages": [
+                {
+                    "package_name": "scipy"
+                },
+                {
+                    "package_name": "tqdm"
+                },
+                {
+                    "package_name": "yacs"
+                },
+                {
+                    "package_name": "Pillow",
+                    "package_version": "5.0.0",
+                    "restraint": "EXACT"
+                },
+                {
+                    "package_name": "torch",
+                    "package_version": "1.6.0",
+                    "restraint": "EXACT"
+                },
+                {
+                    "package_name": "torchvision",
+                    "package_version": "0.7.0",
+                    "restraint": "EXACT"
+                },
+                {
+                    "package_name": "numpy",
+                    "package_version": "1.19.1",
+                    "restraint": "EXACT"
+                },
+                {
+                    "package_name": "addict",
+                    "package_version": "2.2.1",
+                    "restraint": "EXACT"
+                },
+                {
+                    "package_name": "pyyaml",
+                    "package_version": "5.3.1",
+                    "restraint": "EXACT"
+                },
+                {
+                    "package_name": "yapf",
+                    "package_version": "0.30.0",
+                    "restraint": "EXACT"
+                },
+                {
+                    "package_name": "opencv-python",
+                    "package_version": "4.2.0.34",
+                    "restraint": "EXACT"
+                },
+                {
+                    "package_name": "matplotlib",
+                    "package_version": "3.2.2",
+                    "restraint": "EXACT"
+                }
+                
+            ]
+        }
+    ]
+}
