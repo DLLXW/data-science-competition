@@ -1,0 +1,8 @@
+catboost
+xgboost
+lightgbm
+tqdm
+opencv-python
+scikit-learn
+torchvision
+pytorch
