@@ -1,7 +1,7 @@
 ## [云上先锋--垃圾图片分类](https://competition.huaweicloud.com/information/1000041335/ranking?track=112)
 历时一个月,最终取得了本次比赛的**冠军**,这里分享一下自己的方案
 
-关于源码:比较trick的一些东西暂不开源,[戳这里](https://github.com/DLLXW/data-science-competition/tree/main/%E5%8D%8E%E4%B8%BA/Huawei-cloud-%E5%9E%83%E5%9C%BE%E5%88%86%E7%B1%BB)，这是比赛刚开始几天我开源的一个线上92的baseline，是使用的resnet50作为backbone,其实将resnet50改为swsl就可以轻易上分了
+关于源码:比较trick的一些东西暂不开源,[戳这里](https://github.com/DLLXW/data-science-competition/tree/main/huawei/Huawei-cloud-%E5%9E%83%E5%9C%BE%E5%88%86%E7%B1%BB)，这是比赛刚开始几天我开源的一个线上92的baseline，是使用的resnet50作为backbone,其实将resnet50改为swsl就可以轻易上分了
 ## 比赛介绍
 本赛题采用深圳市垃圾分类标准，赛题任务是对垃圾图片进行分类，即首先识别出垃圾图片中物品的类别（比如易拉罐、果皮等），然后查询垃圾分类规则，输出该垃圾图片中物品属于可回收物、厨余垃圾、有害垃圾和其他垃圾中的哪一种。
 
