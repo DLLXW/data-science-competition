@@ -20,7 +20,7 @@
 - [华为云--“域见杯”医检人工智能开发者大赛](https://mp.weixin.qq.com/s/_PE5AzK3FgQ69DFlgX4ESA)(**Rank 8/405**)
 - [芒果TV算法大赛--无参考视频画质机器评价](https://mp.weixin.qq.com/s/pwpwd96jtzTB5dFPjfKQAw)(**Rank 11/312**)
 - [2022全球人工智能技术创新大赛-电商关键属性的图文匹配](https://github.com/DLLXW/data-science-competition/tree/main/heywhale/gaiic2022/code)(**三等奖**)
-- [Kaggle 宠物流行度预测--Trust your CV](https://mp.weixin.qq.com/s/RDuAJLRAaGRc1N0PtDtCQA)(银牌 Rank 172/3537)
+- [Kaggle 宠物流行度预测--Trust your CV](https://mp.weixin.qq.com/s/RDuAJLRAaGRc1N0PtDtCQA)(**银牌 Rank 172/3537**)
 #### 2021
 - [天池-真实场景篡改图像检测挑战赛](https://mp.weixin.qq.com/s/zsKE1sz8gqtzmwsP4CZGkg)(**Rank 5/1149**)
 - [kaggle-Sartorius-Cell Instance Segmentation](https://github.com/DLLXW/kaggle-Sartorius)(**银牌 Rank 17/1505**)
